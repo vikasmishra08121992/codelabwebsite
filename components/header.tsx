@@ -18,7 +18,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`sticky top-0 z-50 ${isScrolled ? 'bg-white shadow-md' : 'bg-gradient-to-r from-neutral-50 to-blue-50'}`}>
+    <header className={`sticky top-0 z-50 ${isScrolled ? 'bg-white shadow-md' : 'bg-gradient-to-l from-gray-100 to-orange-50'}`}>
    
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">

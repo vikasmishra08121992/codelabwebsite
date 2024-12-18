@@ -13,7 +13,7 @@ export function ServiceLayout({ title, subtitle, children }: ServiceLayoutProps)
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-50 to-blue-50" />
+        <div className="absolute inset-0 bg-gradient-to-l from-gray-100 to-orange-50" />
         <div className="container relative mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-orange-500 mb-6">

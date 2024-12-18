@@ -250,14 +250,14 @@ export function TechnologyShowcase() {
   const [activeCategory, setActiveCategory] = useState('mobile')
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-16 bg-neutral">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 text-orange inline-block px-6 py-2  rounded">
           Technologies That Define Our Craft
           </h2>
-          <p className="text-gray-600 text-lg">
-          We leverage the latest tools and technologies to deliver cutting-edge IT solutions tailored to your needs!
+          <p className="text-gray-500 text-lg mt-4">
+          Our IT solutions are powered by the latest and most reliable technologies.
           </p>
         </div>
 
@@ -269,8 +269,8 @@ export function TechnologyShowcase() {
               className={cn(
                 "px-4 py-2 rounded-full text-sm font-medium transition-colors",
                 activeCategory === category.id
-                  ? "bg-primary text-white"
-                  : "bg-white text-gray-600 hover:bg-gray-100"
+                  ? "bg-orange-600 text-white"
+                  : "bg-gray-800 text-white hover:bg-gray-700"
               )}
             >
               {category.name}
@@ -278,27 +278,31 @@ export function TechnologyShowcase() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {technologies[activeCategory as keyof typeof technologies]?.map((tech, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 mb-4">
-                  <Image
-                    src={tech.icon}
-                    alt={tech.name}
-                    width={64}
-                    height={64}
-                    className="object-contain"
-                  />
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll space-x-8 py-4">
+            {[...technologies[activeCategory as keyof typeof technologies], 
+              ...technologies[activeCategory as keyof typeof technologies]].map((tech, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-40 group"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 mb-4 transition-transform group-hover:scale-110">
+                    <Image
+                      src={tech.icon}
+                      alt={tech.name}
+                      width={80}
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <h3 className="text-gray-500 text-sm font-medium text-center group-hover:text-white transition-colors">
+                    {tech.name}
+                  </h3>
                 </div>
-                <h3 className="font-semibold mb-2">{tech.name}</h3>
-                <p className="text-sm text-gray-600">{tech.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
