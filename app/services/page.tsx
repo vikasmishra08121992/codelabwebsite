@@ -8,19 +8,19 @@ export default function Services() {
     <div className="py-20">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center">
               <Image src={service.icon} alt={service.title} width={150} height={150} className="mb-4" />
               <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <ul className="list-disc list-inside text-gray-600">
+              <ul className="list-disc list-inside text-gray-600 ">
                 {service.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
             
               <Link 
-              className="inline-flex items-center text-primary hover:text-secondary transition-colors duration-200"
+              className="inline-flex items-center text-orange-500 hover:text-orange-600 transition-colors duration-200"
               href={`/services/${service.serviceName}`} >Learn More <ArrowRight className="ml-2 h-4 w-4" /> </Link>
             
               </ul>

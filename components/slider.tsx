@@ -56,16 +56,16 @@ export function Slider() {
             objectFit="cover"
             priority
           />
-          <div className="absolute inset-0 bg-orange-200" />
+          <div className="absolute inset-0  bg-gradient-to-r from-neutral-50 to-blue-50" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-4xl px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-orange-500">
                 {slide.title}
               </h1>
-              <p className="text-xl mb-8">
+              <p className="text-xl mb-8 text-orange-500">
                 {slide.description}
               </p>
-              <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-orange-100">
+              <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-grey-100">
                 <Link href="/contact">
                   Hire Expert Developers Now
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -77,13 +77,13 @@ export function Slider() {
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/30 p-2 rounded-full text-white hover:bg-white/50 transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/30 p-2 rounded-full text-white hover:bg-white/50 transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-neutral-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
       >
         <ChevronRight size={24} />
       </button>
