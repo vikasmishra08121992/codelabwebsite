@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Slider } from '../components/slider'
+import { TechnologyShowcase } from '../components/technology-showcase'
 
 export default function Home() {
   return (
@@ -83,7 +84,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+    
 
+      <TechnologyShowcase />
 
       <section className="bg-blue-50 py-20">
         <div className="container mx-auto px-4 text-center">
