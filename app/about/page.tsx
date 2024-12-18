@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <div className="py-20">
+    <div className="py-20 bg-zinc-50">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Empowering Businesses with Cutting-Edge IT Solutions.</h1>
 

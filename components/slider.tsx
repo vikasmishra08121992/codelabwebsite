@@ -10,17 +10,17 @@ const slides = [
   {
     title: "Top Talent For Your Development Needs",
     description: "We offer expert developers who bring innovation and efficiency to your projects.",
-    image: "/images/slider-1.jpg",
+    image: "/Codelab Technologies.jpg",
   },
   {
     title: "Cutting-Edge Solutions for Modern Businesses",
     description: "Stay ahead of the competition with our innovative IT services.",
-    image: "/images/slider-2.jpg",
+    image: "/Codelab Technologies.jpg",
   },
   {
     title: "Empower Your Digital Transformation",
     description: "Partner with us to revolutionize your business in the digital age.",
-    image: "/images/slider-3.jpg",
+    image: "/Codelab Technologies.jpg",
   },
 ]
 
@@ -49,20 +49,20 @@ export function Slider() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <Image
+           {/* <Image
             src={slide.image}
             alt={slide.title}
             layout="fill"
             objectFit="cover"
             priority
-          />
-          <div className="absolute inset-0  bg-gradient-to-l from-gray-100 to-orange-50" />
+          />  */}
+          <div className="absolute inset-0  bg-zinc-50" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-4xl px-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-orange-500">
                 {slide.title}
               </h1>
-              <p className="text-xl mb-8 text-orange-500">
+              <p className="text-xl mb-8 text-orange-400">
                 {slide.description}
               </p>
               <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-grey-100">
@@ -77,7 +77,7 @@ export function Slider() {
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
       >
         <ChevronLeft size={24} />
       </button>

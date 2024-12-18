@@ -18,7 +18,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`sticky top-0 z-50 ${isScrolled ? 'bg-white shadow-md' : 'bg-gradient-to-l from-gray-100 to-orange-50'}`}>
+    <header className={`sticky top-0 z-50 ${isScrolled ? 'bg-zinc-50 shadow-md' : 'bg-zinc-50'}`}>
    
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
@@ -26,11 +26,11 @@ const Header = () => {
         </Link>
         <nav>
           <ul className="flex space-x-6">
-            <li><Link href="/" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Home</Link></li>
+            <li><Link href="/" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Home</Link></li>
             <li><Link href="/about" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>About</Link></li>
-            <li><Link href="/services" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Services</Link></li>
-            <li><Link href="/technologies" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Technologies</Link></li>
-            <li><Link href="/blog" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Blog</Link></li>
+            <li><Link href="/services" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Services</Link></li>
+            <li><Link href="/technologies" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Technologies</Link></li>
+            {/* <li><Link href="/blog" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Blog</Link></li> */}
             <li>
               <Button asChild variant={isScrolled ? "default" : "default"}>
                 <Link href="/contact">Contact Us</Link>
