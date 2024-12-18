@@ -77,13 +77,13 @@ export function Slider() {
       ))}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-neutral-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
       >
         <ChevronRight size={24} />
       </button>
