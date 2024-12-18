@@ -88,7 +88,7 @@ export default function Home() {
 
       <TechnologyShowcase />
 
-      <section className="bg-orange-50 py-20">
+      <section className="bg-gradient-to-l from-gray-100 to-orange-50 py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Empowering Businesses with Cutting-Edge IT Solutions</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">

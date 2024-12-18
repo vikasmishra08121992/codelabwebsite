@@ -65,8 +65,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className="font-medium">Email US</div>
-                  <a href="mailto:sales@codelab.com" className="text-gray-600">
-                    sales@codelab.com
+                  <a href="mailto:info@codelabtechnologies.com" className="text-gray-600">
+                  info@codelabtechnologies.com
                   </a>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                 <div>
                   <div className="font-medium">Call US</div>
                   <a href="tel:+916351576580" className="text-gray-600">
-                    +91 63515 76580
+                    +91 97227 80697
                   </a>
                 </div>
               </div>
@@ -90,8 +90,7 @@ export default function ContactPage() {
                 <div>
                   <div className="font-medium">Our Address</div>
                   <address className="text-gray-600 not-italic">
-                    E 910-912, CodeLab Glory II, Technology Road,<br />
-                    Silicon Valley, USA – 382470
+                    45 Shivanand Jashodanagar Ahmedabad-382445
                   </address>
                 </div>
               </div>

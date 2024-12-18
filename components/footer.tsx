@@ -98,8 +98,7 @@ export function Footer() {
               <li className="text-sm">Email: info@codelabtechnologies.com</li>
               <li className="text-sm">Phone: +91 9722780697</li>
               <li className="text-sm">
-                Address: 123 Tech Street<br />
-                Silicon Valley, CA 94025
+                Address: 45 Shivanand <br/>Jashodanagar Ahmedabad-382445
               </li>
             </ul>
           </div>
