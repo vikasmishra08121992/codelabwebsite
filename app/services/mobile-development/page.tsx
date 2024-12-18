@@ -3,23 +3,23 @@ import { ServiceLayout } from '../../../components/service-layout';
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle } from 'lucide-react'
 
-export default function WebDevelopment() {
+export default function MobileDevelopment() {
   return (
     <ServiceLayout
-      title="Web Development Services"
-      subtitle="Create powerful, scalable web applications with modern technologies and best practices"
+      title="Mobile Development Services"
+      subtitle="Build powerful, user-friendly mobile applications for iOS and Android platforms"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Web Development Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">Our Mobile Development Expertise</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center">
-                      <feature.icon className="w-5 h-5 text-teal-600" />
+                    <div className="w-8 h-8 rounded-lg bg-orange-200 flex items-center justify-center">
+                      <feature.icon className="w-5 h-5 text-orange-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">{feature.title}</h3>
@@ -34,13 +34,13 @@ export default function WebDevelopment() {
 
         {/* Process */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Development Process</h2>
+          <h2 className="text-2xl font-bold mb-8">Our Mobile Development Process</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <ul className="space-y-4">
                 {process.map((step, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-teal-600 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-orange-600 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">{step.title}</h3>
                       <p className="text-gray-600">{step.description}</p>
@@ -51,8 +51,8 @@ export default function WebDevelopment() {
             </div>
             <div className="relative aspect-square md:aspect-auto">
               <Image
-                src="/images/web-development-process.jpg"
-                alt="Web Development Process"
+                src="/services/mobile-dev-process.jpg"
+                alt="Mobile Development Process"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -88,76 +88,75 @@ export default function WebDevelopment() {
 
 const features = [
   {
-    title: 'Custom Web Applications',
-    description: 'Tailored solutions that perfectly match your business requirements and goals.',
+    title: 'Native iOS Development',
+    description: 'High-performance iOS apps using Swift and the latest Apple technologies.',
     icon: CheckCircle
   },
   {
-    title: 'Responsive Design',
-    description: 'Websites that look and function perfectly on all devices and screen sizes.',
+    title: 'Native Android Development',
+    description: 'Robust Android apps using Kotlin and Java with Material Design principles.',
     icon: CheckCircle
   },
   {
-    title: 'E-commerce Solutions',
-    description: 'Powerful online stores with secure payment processing and inventory management.',
+    title: 'Cross-Platform Development',
+    description: 'Efficient multi-platform apps using React Native or Flutter.',
     icon: CheckCircle
   },
   {
-    title: 'Progressive Web Apps',
-    description: 'Fast, reliable, and engaging web applications that work offline.',
+    title: 'UI/UX Design',
+    description: 'Intuitive and engaging user interfaces tailored for mobile experiences.',
     icon: CheckCircle
   },
   {
-    title: 'API Development',
-    description: 'Robust and scalable APIs that power your web applications.',
+    title: 'App Store Optimization',
+    description: 'Strategies to improve visibility and downloads on app stores.',
     icon: CheckCircle
   },
   {
-    title: 'Performance Optimization',
-    description: 'Fast-loading websites optimized for search engines and user experience.',
+    title: 'Mobile App Testing',
+    description: 'Comprehensive testing across devices and OS versions for quality assurance.',
     icon: CheckCircle
   }
 ]
 
 const process = [
   {
-    title: 'Discovery and Planning',
-    description: 'We start by understanding your business goals, target audience, and project requirements.'
+    title: 'Requirement Analysis',
+    description: 'Understanding your business goals and app requirements.'
   },
   {
-    title: 'Design and Prototyping',
-    description: 'Creating wireframes and interactive prototypes to visualize the final product.'
+    title: 'UI/UX Design',
+    description: 'Creating intuitive and appealing mobile app interfaces.'
   },
   {
     title: 'Development',
-    description: 'Building your web application using modern technologies and best practices.'
+    description: 'Building the app using the chosen technology stack.'
   },
   {
-    title: 'Testing and QA',
-    description: 'Rigorous testing to ensure quality, security, and optimal performance.'
+    title: 'Testing',
+    description: 'Rigorous testing on various devices and scenarios.'
   },
   {
     title: 'Deployment',
-    description: 'Launching your web application with proper setup and configuration.'
+    description: 'Launching the app on the App Store and/or Google Play Store.'
   },
   {
-    title: 'Maintenance and Support',
-    description: 'Ongoing support and updates to keep your application running smoothly.'
+    title: 'Maintenance and Updates',
+    description: 'Ongoing support, bug fixes, and feature updates.'
   }
 ]
 
 const technologies = [
-  { name: 'React', icon: '/tech/react.svg' },
-  { name: 'Next.js', icon: '/tech/nextjs.svg' },
-  { name: 'Node.js', icon: '/tech/nodejs.svg' },
-  { name: 'TypeScript', icon: '/tech/typescript.svg' },
-  { name: 'Python', icon: '/tech/python.svg' },
-  { name: 'Django', icon: '/tech/django.svg' },
-  { name: 'PostgreSQL', icon: '/tech/postgresql.svg' },
-  { name: 'MongoDB', icon: '/tech/mongodb.svg' },
-  { name: 'AWS', icon: '/tech/aws.svg' },
-  { name: 'Docker', icon: '/tech/docker.svg' },
-  { name: 'GraphQL', icon: '/tech/graphql.svg' },
-  { name: 'Redis', icon: '/tech/redis.svg' }
+  { name: 'Swift', icon: '/tech-icons/swift.svg' },
+  { name: 'Kotlin', icon: '/tech-icons/kotlin.svg' },
+  { name: 'React Native', icon: '/tech-icons/react-native.svg' },
+  { name: 'Flutter', icon: '/tech-icons/flutter.svg' },
+  { name: 'Xamarin', icon: '/tech-icons/xamarin.svg' },
+  { name: 'Firebase', icon: '/tech-icons/firebase.svg' },
+  { name: 'Android Studio', icon: '/tech-icons/android-studio.svg' },
+  { name: 'Xcode', icon: '/tech-icons/xcode.svg' },
+  { name: 'AppCenter', icon: '/tech-icons/appcenter.svg' },
+  { name: 'Fastlane', icon: '/tech-icons/fastlane.svg' },
+  { name: 'Unity', icon: '/tech-icons/unity.svg' },
+  { name: 'ARKit', icon: '/tech-icons/arkit.svg' }
 ]
-

@@ -2,12 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Slider } from '../components/slider'
 
 export default function Home() {
   return (
     <div>
+      <Slider />
 
-      <section className="bg-gradient-to-r from-secondary to-orange-400 py-32">
+      {/* <section className="bg-gradient-to-r from-secondary to-orange-400 py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Top Talent For Your Development Needs
@@ -25,8 +27,8 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-      </section>
-{/* 
+      </section> */}
+      {/* 
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">

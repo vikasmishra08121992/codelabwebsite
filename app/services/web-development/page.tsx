@@ -18,8 +18,8 @@ export default function WebDevelopment() {
               <Card key={index} className="border-none shadow-lg">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center">
-                      <feature.icon className="w-5 h-5 text-teal-600" />
+                    <div className="w-8 h-8 rounded-lg bg-orange-200 flex items-center justify-center">
+                      <feature.icon className="w-5 h-5 text-orange-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">{feature.title}</h3>
@@ -40,7 +40,7 @@ export default function WebDevelopment() {
               <ul className="space-y-4">
                 {process.map((step, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-teal-600 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-orange-600 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">{step.title}</h3>
                       <p className="text-gray-600">{step.description}</p>
@@ -51,7 +51,7 @@ export default function WebDevelopment() {
             </div>
             <div className="relative aspect-square md:aspect-auto">
               <Image
-                src="/images/web-development-process.jpg"
+                src="/services/webser1.jpeg"
                 alt="Web Development Process"
                 fill
                 className="object-cover rounded-lg"
@@ -147,17 +147,18 @@ const process = [
 ]
 
 const technologies = [
-  { name: 'React', icon: '/tech/react.svg' },
-  { name: 'Next.js', icon: '/tech/nextjs.svg' },
-  { name: 'Node.js', icon: '/tech/nodejs.svg' },
-  { name: 'TypeScript', icon: '/tech/typescript.svg' },
-  { name: 'Python', icon: '/tech/python.svg' },
-  { name: 'Django', icon: '/tech/django.svg' },
-  { name: 'PostgreSQL', icon: '/tech/postgresql.svg' },
-  { name: 'MongoDB', icon: '/tech/mongodb.svg' },
-  { name: 'AWS', icon: '/tech/aws.svg' },
-  { name: 'Docker', icon: '/tech/docker.svg' },
-  { name: 'GraphQL', icon: '/tech/graphql.svg' },
-  { name: 'Redis', icon: '/tech/redis.svg' }
+  { name: 'React', icon: '/tech-icons/react.svg' },
+  { name: 'Next.js', icon: '/tech-icons/nextjs.svg' },
+  { name: 'Node.js', icon: '/tech-icons/nodejs.svg' },
+  { name: 'TypeScript', icon: '/tech-icons/typescript.svg' },
+  { name: 'Python', icon: '/tech-icons/python.svg' },
+  { name: 'Django', icon: '/tech-icons/django.svg' },
+  { name: 'PostgreSQL', icon: '/tech-icons/postgresql.svg' },
+  { name: 'MongoDB', icon: '/tech-icons/mongodb.svg' },
+  { name: 'AWS', icon: '/tech-icons/aws.svg' },
+  { name: 'Docker', icon: '/tech-icons/docker.svg' },
+  { name: 'GraphQL', icon: '/tech-icons/graphql.svg' },
+  { name: 'Redis', icon: '/tech-icons/redis.svg' }
 ]
+
 

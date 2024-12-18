@@ -60,7 +60,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
                   <Mail className="text-white w-6 h-6" />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
                   <Phone className="text-white w-6 h-6" />
                 </div>
                 <div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
                   <MapPin className="text-white w-6 h-6" />
                 </div>
                 <div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
 
                 <Button 
                   type="submit" 
-                  className="w-full md:w-auto px-8 bg-teal-600 hover:bg-teal-700"
+                  className="w-full md:w-auto px-8 bg-orange-500 hover:bg-orange-600"
                 >
                   Send Your Message
                 </Button>
