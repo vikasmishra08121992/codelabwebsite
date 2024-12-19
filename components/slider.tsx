@@ -59,10 +59,10 @@ export function Slider() {
           <div className="absolute inset-0  bg-zinc-50" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-4xl px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-orange-500">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-zinc-800">
                 {slide.title}
               </h1>
-              <p className="text-xl mb-8 text-orange-400">
+              <p className="text-xl mb-8 text-orange-500">
                 {slide.description}
               </p>
               <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-grey-100">

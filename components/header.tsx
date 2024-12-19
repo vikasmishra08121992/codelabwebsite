@@ -5,13 +5,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 590) // Increased threshold
+      setIsScrolled(window.scrollY > 590)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -19,85 +18,21 @@ const Header = () => {
   }, [])
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white shadow-md py-2' 
-          : 'bg-transparent py-4'
-      }`}
-    >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center relative z-10">
-          <Image 
-            src={isScrolled ? "/codelab-logo.png" : "/codelab-logo.png"} 
-            alt="CodeLab Technologies Logo" 
-            width={150} 
-            height={40}
-            className="transition-opacity duration-300"
-          />
+    <header className={`sticky top-0 z-50 ${isScrolled ? 'bg-white shadow-md' : 'bg-zinc-50'}`}>
+   
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="flex items-center">
+          <Image src="/codelab-logo.png" alt="CodeLab Technologies Logo" width={150} height={40} />
         </Link>
-        <nav className="relative z-10">
-          <ul className="flex items-center space-x-8">
+        <nav>
+          <ul className="flex space-x-6">
+            <li><Link href="/" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Home</Link></li>
+            <li><Link href="/about" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>About</Link></li>
+            <li><Link href="/services" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Services</Link></li>
+            <li><Link href="/technologies" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Technologies</Link></li>
+            {/* <li><Link href="/blog" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Blog</Link></li> */}
             <li>
-              <Link 
-                href="/" 
-                className={`transition-colors duration-300 hover:text-orange-600 ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/about" 
-                className={`transition-colors duration-300 hover:text-orange-600 ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/services" 
-                className={`transition-colors duration-300 hover:text-orange-600 ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/technologies" 
-                className={`transition-colors duration-300 hover:text-orange-600 ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}
-              >
-                Technologies
-              </Link>
-            </li>
-            {/* <li>
-              <Link 
-                href="/blog" 
-                className={`transition-colors duration-300 hover:text-orange-600 ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}
-              >
-                Blog
-              </Link>
-            </li> */}
-            <li>
-              <Button 
-                asChild 
-                variant="default"
-                className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? "text-white hover:bg-orange-600 hover:text-gray-800" 
-                    : "border border-white text-white hover:bg-orange-600"
-                }`}
-              >
+              <Button asChild variant={isScrolled ? "default" : "default"}>
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </li>

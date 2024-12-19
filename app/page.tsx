@@ -4,16 +4,12 @@ import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Slider } from '../components/slider'
 import { TechnologyShowcase } from '../components/technology-showcase'
-import { HeroSection } from '../components/hero-section'
-import { AnimatedHero } from '../components/animated-background'
+
 export default function Home() {
   return (
     <div>
-      {/* <Slider /> */}
-      <div className="relative h-[80vh]">
-        <AnimatedHero />
-        {/* <HeroSection /> */}
-      </div>
+      <Slider />
+
       {/* <section className="bg-gradient-to-r from-secondary to-orange-400 py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -55,7 +51,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-4 bg-zinc-50">
+      <section className="py-4 bg-zinc-100">
         <div className="container mx-auto px-4 mt-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Service Offerings</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
