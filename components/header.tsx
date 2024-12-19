@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50) // Increased threshold
+      setIsScrolled(window.scrollY > 590) // Increased threshold
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -78,7 +78,7 @@ const Header = () => {
                 Technologies
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link 
                 href="/blog" 
                 className={`transition-colors duration-300 hover:text-orange-600 ${
@@ -87,7 +87,7 @@ const Header = () => {
               >
                 Blog
               </Link>
-            </li>
+            </li> */}
             <li>
               <Button 
                 asChild 
