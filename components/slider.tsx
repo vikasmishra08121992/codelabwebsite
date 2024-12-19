@@ -1,92 +1,214 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 
 const slides = [
   {
-    title: "Top Talent For Your Development Needs",
-    description: "We offer expert developers who bring innovation and efficiency to your projects.",
-    image: "/Codelab Technologies.jpg",
+    title: "Quality Engineering Services",
+    description: "Delivering excellence in product testing, design validation, & test automation",
+    image: "/services/QES-Homepage-5.png",
+    gradient: "from-slate-400 to-blue-300",
+    imagePosition: "right",
+    ctaText: "Explore QE Services",
+    ctaLink: "/services/quality-engineering"
   },
   {
-    title: "Cutting-Edge Solutions for Modern Businesses",
-    description: "Stay ahead of the competition with our innovative IT services.",
-    image: "/Codelab Technologies.jpg",
+    title: "Cloud Solutions & DevOps",
+    description: "Transform your infrastructure with scalable cloud solutions and efficient DevOps practices",
+    image: "/services/QES-Homepage-5.png",
+    gradient: "from-slate-400 to-purple-200",
+    imagePosition: "left",
+    ctaText: "Discover Cloud Solutions",
+    ctaLink: "/services/cloud-solutions"
   },
   {
-    title: "Empower Your Digital Transformation",
-    description: "Partner with us to revolutionize your business in the digital age.",
-    image: "/Codelab Technologies.jpg",
+    title: "Digital Transformation",
+    description: "Modernize your business with cutting-edge digital solutions and innovative strategies",
+    image: "/services/QES-Homepage-5.png",
+    gradient: "from-slate-400 to-indigo-300",
+    imagePosition: "right",
+    ctaText: "Start Transformation",
+    ctaLink: "/services/digital-transformation"
   },
+  {
+    title: "Enterprise Solutions",
+    description: "Custom enterprise software solutions to streamline your business operations",
+    image: "/services/QES-Homepage-5.png",
+    gradient: "from-slate-300 to-slate-400",
+    imagePosition: "left",
+    ctaText: "View Solutions",
+    ctaLink: "/services/enterprise-solutions"
+  }
 ]
 
 export function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0)
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+  const [isAnimating, setIsAnimating] = useState(false)
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000)
+    const timer = setInterval(() => {
+      if (!isAnimating) {
+        setCurrentSlide((prev) => (prev + 1) % slides.length)
+      }
+    }, 5000)
+
     return () => clearInterval(timer)
-  }, [])
+  }, [isAnimating])
+
+  const navigate = (direction: 'next' | 'prev') => {
+    if (isAnimating) return
+
+    setIsAnimating(true)
+    if (direction === 'next') {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    } else {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+    }
+
+    setTimeout(() => setIsAnimating(false), 500)
+  }
 
   return (
-    <div className="relative h-[70vh]">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-           {/* <Image
-            src={slide.image}
-            alt={slide.title}
-            layout="fill"
-            objectFit="cover"
-            priority
-          />  */}
-          <div className="absolute inset-0  bg-zinc-50" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white max-w-4xl px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-zinc-800">
-                {slide.title}
-              </h1>
-              <p className="text-xl mb-8 text-orange-500">
-                {slide.description}
-              </p>
-              <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-grey-100">
-                <Link href="/contact">
-                  Hire Expert Developers Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div className="relative h-[70vh] overflow-hidden">
+      <AnimatePresence mode="wait">
+        {slides.map((slide, index) => (
+          index === currentSlide && (
+            <motion.div
+              key={index}
+              className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="relative h-full">
+                <div className="absolute inset-0">
+                  <div className="container mx-auto h-full px-4">
+                    <div className="flex h-full items-center">
+                      {slide.imagePosition === "left" ? (
+                        <>
+                          <motion.div
+                            className="w-full md:w-1/2"
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                          >
+                            <Image
+                              src={slide.image}
+                              alt={slide.title}
+                              width={600}
+                              height={400}
+                              className="object-contain"
+                              priority
+                            />
+                          </motion.div>
+                          <motion.div
+                            className="w-full md:w-1/2 text-white md:pl-12"
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.4, duration: 0.5 }}
+                          >
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                              {slide.title}
+                            </h1>
+                            <p className="text-lg md:text-xl mb-8 text-gray-200">
+                              {slide.description}
+                            </p>
+                            <Button 
+                              asChild
+                              size="lg"
+                              className="bg-orange-500 hover:bg-orange-600 text-white"
+                            >
+                              <Link href={slide.ctaLink}>
+                                {slide.ctaText}
+                              </Link>
+                            </Button>
+                          </motion.div>
+                        </>
+                      ) : (
+                        <>
+                          <motion.div
+                            className="w-full md:w-1/2 text-white"
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                          >
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                              {slide.title}
+                            </h1>
+                            <p className="text-lg md:text-xl mb-8 text-gray-200">
+                              {slide.description}
+                            </p>
+                            <Button 
+                              asChild
+                              size="lg"
+                              className="bg-orange-500 hover:bg-orange-600 text-white"
+                            >
+                              <Link href={slide.ctaLink}>
+                                {slide.ctaText}
+                              </Link>
+                            </Button>
+                          </motion.div>
+                          <motion.div
+                            className="w-full md:w-1/2 md:pl-12"
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.4, duration: 0.5 }}
+                          >
+                            <Image
+                              src={slide.image}
+                              alt={slide.title}
+                              width={600}
+                              height={400}
+                              className="object-contain"
+                              priority
+                            />
+                          </motion.div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )
+        ))}
+      </AnimatePresence>
+
+      {/* Navigation Arrows */}
       <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
+        onClick={() => navigate('prev')}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-colors duration-200"
+        aria-label="Previous slide"
       >
-        <ChevronLeft size={24} />
+        <ChevronLeft className="w-6 h-6" />
       </button>
       <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-50 p-2 rounded-full text-orange hover:bg-orange-400 transition-colors"
+        onClick={() => navigate('next')}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-colors duration-200"
+        aria-label="Next slide"
       >
-        <ChevronRight size={24} />
+        <ChevronRight className="w-6 h-6" />
       </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+              index === currentSlide ? 'bg-orange-500' : 'bg-white/50 hover:bg-white/75'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   )
 }
