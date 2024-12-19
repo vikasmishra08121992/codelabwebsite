@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-4 bg-zinc-100">
+      <section className="py-4 bg-white">
         <div className="container mx-auto px-4 mt-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Service Offerings</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">

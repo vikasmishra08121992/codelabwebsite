@@ -12,7 +12,7 @@ const slides = [
     title: "Quality Engineering Services",
     description: "Delivering excellence in product testing, design validation, & test automation",
     image: "/services/QES-Homepage-5.png",
-    gradient: "from-slate-400 to-blue-300",
+    gradient: "from-neutral-400 to-zinc-200",
     imagePosition: "right",
     ctaText: "Explore QE Services",
     ctaLink: "/services/quality-engineering"
@@ -21,7 +21,7 @@ const slides = [
     title: "Cloud Solutions & DevOps",
     description: "Transform your infrastructure with scalable cloud solutions and efficient DevOps practices",
     image: "/services/QES-Homepage-5.png",
-    gradient: "from-slate-400 to-purple-200",
+    gradient: "from-zinc-200 to-gray-400",
     imagePosition: "left",
     ctaText: "Discover Cloud Solutions",
     ctaLink: "/services/cloud-solutions"
@@ -30,7 +30,7 @@ const slides = [
     title: "Digital Transformation",
     description: "Modernize your business with cutting-edge digital solutions and innovative strategies",
     image: "/services/QES-Homepage-5.png",
-    gradient: "from-slate-400 to-indigo-300",
+    gradient: "from-zinc-400 to-stone-200",
     imagePosition: "right",
     ctaText: "Start Transformation",
     ctaLink: "/services/digital-transformation"
@@ -39,7 +39,7 @@ const slides = [
     title: "Enterprise Solutions",
     description: "Custom enterprise software solutions to streamline your business operations",
     image: "/services/QES-Homepage-5.png",
-    gradient: "from-slate-300 to-slate-400",
+    gradient: "from-zinc-200 to-slate-400",
     imagePosition: "left",
     ctaText: "View Solutions",
     ctaLink: "/services/enterprise-solutions"
