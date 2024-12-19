@@ -56,7 +56,7 @@ export default function Home() {
       </section> */}
 
       <section className="py-4 bg-zinc-50">
-        <div className="container mx-auto px-4 mt-12">
+        <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Service Offerings</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
             Our services empower your business with innovative, scalable, and tailored technology solutions.
@@ -74,9 +74,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-4  bg-zinc-800">
-        <div className="container mx-auto px-4 mt-12">
-          <h2 className="text-3xl font-bold text-center text-white mb-12">Why Us</h2>
+      <section className="py-4  bg-zinc-100">
+        <div className="container mx-auto px-4 mt-12 mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12">Why Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center">

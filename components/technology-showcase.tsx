@@ -296,7 +296,7 @@ export function TechnologyShowcase() {
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-gray-500 text-sm font-medium text-center group-hover:text-white transition-colors">
+                  <h3 className="text-gray-500 text-sm font-medium text-center group-hover:text-orange-500 transition-colors">
                     {tech.name}
                   </h3>
                 </div>

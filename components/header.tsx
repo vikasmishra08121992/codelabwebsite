@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 590) // Increased threshold
+      setIsScrolled(window.scrollY > 50) // Increased threshold
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -94,8 +94,8 @@ const Header = () => {
                 variant="default"
                 className={`transition-colors duration-300 ${
                   isScrolled 
-                    ? "text-white hover:bg-orange-600 hover:text-gray-800" 
-                    : "border border-white text-white hover:bg-orange-600"
+                    ? "text-white hover:bg-orange-600" 
+                    : "text-white hover:bg-orange-600"
                 }`}
               >
                 <Link href="/contact">Contact Us</Link>

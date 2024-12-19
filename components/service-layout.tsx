@@ -22,7 +22,7 @@ export function ServiceLayout({ title, subtitle, children }: ServiceLayoutProps)
             <p className="text-xl text-gray-700 mb-8">
               {subtitle}
             </p>
-            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-white/90">
+            <Button asChild size="lg" className="bg-orange-500 text-white">
               <Link href="/contact">
                 Get Started <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
