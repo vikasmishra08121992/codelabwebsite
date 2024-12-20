@@ -10,36 +10,36 @@ import Link from 'next/link'
 const slides = [
 
     {
-        title: "Enterprise Solutions",
-        description: "Custom enterprise software solutions to streamline your business operations",
+        title: "Reliable Offshore Solutions",
+        description: "Tailored Offshore Development Services to Enhance Your Business Efficiency",
         image: "/services/QES-Homepage-5.png",
-        gradient: "from-zinc-200 to-slate-400",
+        gradient: "from-zinc-200 to-orange-400",
         imagePosition: "left",
         ctaText: "View Solutions",
         ctaLink: "/services/enterprise-solutions"
     }, {
         title: "Quality Engineering Services",
-        description: "Delivering excellence in product testing, design validation, & test automation",
+        description: "Providing excellence in product testing, design validation, and test automation.",
         image: "/services/QES-Homepage-5.png",
-        gradient: "from-neutral-400 to-zinc-200",
+        gradient: "from-orange-400 to-zinc-200",
         imagePosition: "right",
         ctaText: "Explore QE Services",
         ctaLink: "/services/quality-engineering"
     },
     {
         title: "Cloud Solutions & DevOps",
-        description: "Transform your infrastructure with scalable cloud solutions and efficient DevOps practices",
+        description: "Elevate your infrastructure with scalable cloud solutions and optimized DevOps practices.",
         image: "/services/QES-Homepage-5.png",
-        gradient: "from-zinc-200 to-gray-400",
+        gradient: "from-zinc-200 to-orange-400",
         imagePosition: "left",
         ctaText: "Discover Cloud Solutions",
         ctaLink: "/services/cloud-solutions"
     },
     {
         title: "Digital Transformation",
-        description: "Modernize your business with cutting-edge digital solutions and innovative strategies",
+        description: "Transform your business with advanced digital solutions and forward-thinking strategies.",
         image: "/services/QES-Homepage-5.png",
-        gradient: "from-zinc-400 to-stone-200",
+        gradient: "from-orange-400 to-zinc-200",
         imagePosition: "right",
         ctaText: "Start Transformation",
         ctaLink: "/services/digital-transformation"
@@ -117,7 +117,7 @@ export function Slider() {
                                                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                                                             {slide.title}
                                                         </h1>
-                                                        <p className="text-lg md:text-xl mb-8 text-gray-200">
+                                                        <p className="text-lg md:text-xl mb-8 text-white">
                                                             {slide.description}
                                                         </p>
                                                         <Button

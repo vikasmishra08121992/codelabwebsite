@@ -10,10 +10,10 @@ interface ServiceLayoutProps {
 
 export function ServiceLayout({ title, subtitle, children }: ServiceLayoutProps) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col  ">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-white" />
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden ">
+        <div className="absolute inset-0 bg-gradient-to-l from-zinc-200 to-orange-400 " />
         <div className="container relative mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">

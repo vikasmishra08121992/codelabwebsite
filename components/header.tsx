@@ -32,9 +32,9 @@ const Header = () => {
             <li><Link href="/technologies" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Technologies</Link></li>
             {/* <li><Link href="/blog" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold'}`}>Blog</Link></li> */}
             <li>
-              <Button asChild variant={isScrolled ? "default" : "default"}>
-                <Link href="/contact">Contact Us</Link>
-              </Button>
+             
+                <Link href="/contact" className={`hover:text-orange-500 ${isScrolled ? 'font-semibold' : 'font-semibold '}`}>Contact Us</Link>
+             
             </li>
           </ul>
         </nav>
