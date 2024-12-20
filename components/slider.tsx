@@ -142,7 +142,7 @@ export function Slider() {
                                                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                                                             {slide.title}
                                                         </h1>
-                                                        <p className="text-lg md:text-xl mb-8 text-gray-200">
+                                                        <p className="text-lg md:text-xl mb-8 text-white">
                                                             {slide.description}
                                                         </p>
                                                         <Button
