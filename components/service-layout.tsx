@@ -16,10 +16,10 @@ export function ServiceLayout({ title, subtitle, children }: ServiceLayoutProps)
         <div className="absolute inset-0 bg-gradient-to-l from-zinc-200 to-orange-400 " />
         <div className="container relative mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white  mb-6">
               {title}
             </h1>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-xl text-white  mb-8">
               {subtitle}
             </p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-white/90">
