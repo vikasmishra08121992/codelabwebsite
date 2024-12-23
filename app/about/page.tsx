@@ -43,18 +43,20 @@ export default function About() {
   )
 }
 
+
+
 const coreValues = [
   {
-    title: "Innovation",
-    description: "We constantly push the boundaries of technology to deliver innovative solutions."
+    title: "Integrity and Transparency",
+    description: "Prioritizing honest and open communication, fostering trust with clients, partners, and team members"
   },
   {
-    title: "Excellence",
-    description: "We strive for excellence in every project, ensuring the highest quality standards."
+    title: "Creativity and Innovation",
+    description: "Encouraging out-of-the-box thinking to develop unique, forward-thinking solutions for every client"
   },
   {
-    title: "Collaboration",
-    description: "We believe in the power of teamwork and fostering strong partnerships with our clients."
+    title: "Collaboration and Teamwork",
+    description: "A focus on teamwork, leveraging diverse expertise within the company to solve client challenges effectively."
   }
 ]
 

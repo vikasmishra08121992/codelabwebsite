@@ -6,7 +6,7 @@ module.exports = {
 	  './components/**/*.{ts,tsx}',
 	  './app/**/*.{ts,tsx}',
 	  './src/**/*.{ts,tsx}',
-	  ],
+	],
 	theme: {
 	  container: {
 		center: true,
@@ -16,8 +16,10 @@ module.exports = {
 		},
 	  },
 	  extend: {
+		fontFamily: {
+		  helvetica: [ "Helvetica"],
+		},
 		colors: {
-			
 		  border: "hsl(var(--border))",
 		  input: "hsl(var(--input))",
 		  ring: "hsl(var(--ring))",
@@ -51,6 +53,14 @@ module.exports = {
 			DEFAULT: "hsl(var(--card))",
 			foreground: "hsl(var(--card-foreground))",
 		  },
+		  // Custom colors for CodeLab Technologies
+		  codelab: {
+			primary: '#FF6B35',
+			secondary: '#004E89',
+			accent: '#FFA07A',
+			background: '#F8F4F1',
+			text: '#333333',
+		  },
 		},
 		borderRadius: {
 		  lg: "var(--radius)",
@@ -75,3 +85,5 @@ module.exports = {
 	},
 	plugins: [require("tailwindcss-animate")],
   }
+  
+  
