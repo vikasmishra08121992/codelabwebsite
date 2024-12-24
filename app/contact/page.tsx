@@ -15,34 +15,49 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { useState } from 'react'
+import { sendEmail } from '../actions/send-email'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
   code: z.string(),
   contact: z.string(),
-  skypeId: z.string(),
-  budget: z.string(),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 })
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      name: '',
+      email: '',
       code: '+91',
       contact: '',
-      skypeId: '',
-      budget: '',
       message: '',
     },
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    // Handle form submission
-  }
+    setIsSubmitting(true)
+    const formData = new FormData()
+    Object.entries(values).forEach(([key, value]) => {
+      formData.append(key, value)
+    })
 
+    const result = await sendEmail(formData)
+    
+    setIsSubmitting(false)
+    if (result.success) {
+      
+      form.reset()
+    } else {
+     
+    }
+  }
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
@@ -160,36 +175,11 @@ export default function ContactPage() {
                     )}
                   />
 
-                  { <FormField
-                    control={form.control}
-                    name="skypeId"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Website Link</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your Website Link" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  /> }
+          
                 </div>
-                Website Link
+                
 
-                {/* <FormField
-                  control={form.control}
-                  name="budget"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Budget</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Your budget" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                /> */}
-
+              
                 <FormField
                   control={form.control}
                   name="message"

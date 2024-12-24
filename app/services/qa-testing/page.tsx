@@ -142,7 +142,7 @@ const process = [
 
 const technologies = [
   { name: 'Selenium', icon: '/tech-icons/selenium.svg' },
-  { name: 'JUnit', icon: '/tech-icons/junit.svg' },
+  { name: 'JUnit', icon: '/tech-icons/junit1.svg' },
   { name: 'JMeter', icon: '/tech-icons/jmeter.svg' },
   { name: 'Postman', icon: '/tech-icons/postman.svg' },
   { name: 'TestRail', icon: '/tech-icons/testrail.svg' },
