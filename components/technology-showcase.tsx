@@ -6,12 +6,12 @@ import { cn } from '@/lib/utils'
 
 const categories = [
 
-  { id: 'backend', name: 'Backend' },
-  { id: 'cloud', name: 'Cloud' },
-  { id: 'database', name: 'Database' },
-  { id: 'frontend', name: 'Frontend' },
-  { id: 'mobile', name: 'Mobile' },
-  { id: 'qa', name: 'Quality Assurance' }
+  { id: 'backend', name: 'BACKEND' },
+  { id: 'cloud', name: 'CLOUD' },
+  { id: 'database', name: 'DATABASE' },
+  { id: 'frontend', name: 'FRONTEND' },
+  { id: 'mobile', name: 'MOBILE' },
+  { id: 'qa', name: 'QUALITY ASSURANCE' }
   
 
 ]
@@ -234,7 +234,7 @@ export function TechnologyShowcase() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-orange inline-block px-6 py-2  rounded">
-            Technologies That Define Our Craft
+          TECHNOLOGIES THAT DEFINE OUR CRAFT
           </h2>
           <p className="text-gray-500 text-lg mt-4">
             Our IT solutions are powered by the latest and most reliable technologies.
@@ -247,7 +247,7 @@ export function TechnologyShowcase() {
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
               className={cn(
-                "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                "px-6 py-2 rounded-full text-sm font-medium transition-colors",
                 activeCategory === category.id
                   ? "bg-orange-500 text-white"
                   : "bg-gray-800 text-white hover:bg-gray-700"

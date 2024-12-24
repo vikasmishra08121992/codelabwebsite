@@ -6,13 +6,13 @@ import { CheckCircle } from 'lucide-react'
 export default function MobileDevelopment() {
   return (
     <ServiceLayout
-      title="Mobile Development Services"
+      title="MOBILE DEVELOPMENT SERVICES"
       subtitle="Build powerful, user-friendly mobile applications for iOS and Android platforms"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Mobile Development Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR MOBILE DEVELOPMENT EXPERTISE</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
@@ -35,7 +35,7 @@ export default function MobileDevelopment() {
         {/* Process */}
         <div className="grid md:grid-cols-2 ">
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Mobile Development Process</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR MOBILE DEVELOPMENT PROCESS</h2>
           <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
@@ -55,7 +55,7 @@ export default function MobileDevelopment() {
 
         {/* Technologies */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
+          <h2 className="text-2xl font-bold mb-8">TECHNOLOGIES WE USE</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div

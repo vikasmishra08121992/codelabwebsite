@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="py-20 bg-zinc-50">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-12">Empowering Businesses with Cutting-Edge IT Solutions.</h1>
+        <h1 className="text-4xl font-bold text-center mb-12">EMPOWERING BUSINESSES WITH CUTTING-EDGE IT SOLUTIONS</h1>
 
         <div className="flex flex-col md:flex-row items-center mb-20">
         <p className="text-gray-600 mb-6"> Welcome to our IT service-based company! We are dedicated to providing cutting-edge IT solutions that empower businesses in today’s digital era. With our team of skilled professionals, we offer a wide range of services tailored to meet your unique needs. From infrastructure management to software development, cloud computing to cybersecurity, our expertise covers a comprehensive suite of IT offerings. We work collaboratively with you throughout the project lifecycle to ensure seamless implementation and measurable outcomes. Customer satisfaction is our priority.
@@ -15,7 +15,7 @@ export default function About() {
             <Image src="/aboutus.jpeg" alt="About CodeLab Technologies" width={500} height={400} />
           </div>
           <div className="md:w-1/2 md:pl-10">
-            <h2 className="text-2xl font-semibold mb-4">Our Mission & Vision</h2>
+            <h2 className="text-2xl font-semibold mb-4">OUR MISSION & VISION</h2>
             <p className="text-gray-600 mb-6">
             <p className="text-gray-600 mb-6">  <b>Driving Innovation Across Industries:</b> We are committed to expanding our presence across diverse industries by offering innovative, client-specific solutions that address key business challenges such as operational efficiency, scalability, and compliance.  </p> 
             <p className="text-gray-600 mb-6">   <b>Investing in AI and Cloud Services:</b> We will continue to develop AI-driven and cloud-based solutions that help clients automate workflows and improve decision-making.   </p>
@@ -28,7 +28,7 @@ export default function About() {
           </div>
         </div>
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Core Values</h2>
+          <h2 className="text-3xl font-bold mb-8">OUR CORE VALUES</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {coreValues.map((value, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
@@ -44,19 +44,19 @@ export default function About() {
 }
 
 
-
 const coreValues = [
   {
-    title: "Integrity and Transparency",
+    title: "INTEGRITY AND TRANSPARENCY",
     description: "Prioritizing honest and open communication, fostering trust with clients, partners, and team members"
   },
   {
-    title: "Creativity and Innovation",
+    title: "CREATIVITY AND INNOVATION",
     description: "Encouraging out-of-the-box thinking to develop unique, forward-thinking solutions for every client"
   },
   {
-    title: "Collaboration and Teamwork",
+    title: "COLLABORATION AND TEAMWORK",
     description: "A focus on teamwork, leveraging diverse expertise within the company to solve client challenges effectively."
   }
-]
+];
+
 

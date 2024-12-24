@@ -12,7 +12,7 @@ export default function Home() {
       
       <section className="py-4 bg-zinc-50">
         <div className="container mx-auto px-4 mt-12 mb-12">
-          <h2 className="text-3xl font-bold text-center mb-6">Our Offshore Development Expertise</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">OUR OFFSHORE DEVELOPMENT EXPERTISE</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
           Empowering your business with innovative offshore development services and tailored technology solutions. From skilled developers to end-to-end project execution, we ensure scalability, efficiency, and excellence in every delivery.
           </p>
@@ -33,7 +33,7 @@ export default function Home() {
 
       <section className="py-4  bg-zinc-50">
         <div className="container mx-auto px-4 mt-12 mb-12">
-          <h2 className="text-3xl font-bold text-center  mb-12">Why Choose Us?</h2>
+          <h2 className="text-3xl font-bold text-center  mb-12">WHY CHOOSE US?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChooseUs.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center text-center">
@@ -51,7 +51,7 @@ export default function Home() {
 
       <section className="bg-white py-10">
         <div className="container mx-auto px-4 text-center mb-4">
-          <h2 className="text-3xl font-bold mb-8">Empowering Businesses with Cutting-Edge IT Solutions</h2>
+          <h2 className="text-3xl font-bold mb-8">EMPOWERING BUSINESSES WITH CUTTING-EDGE IT SOLUTIONS</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
             We are dedicated to providing innovative IT solutions that drive growth and efficiency for businesses in the digital age.
           </p>
@@ -65,35 +65,34 @@ export default function Home() {
 }
 
 
-
 const whyChooseUs = [
   {
-    title: "Expertise & Experience",
+    title: "EXPERTISE & EXPERIENCE",
     description: "Over a decade of expertise in delivering innovative solutions tailored to meet your needs.",
     icon: "/services/exp1.jpeg"
   },
   {
-    title: "Innovation & Creativity",
+    title: "INNOVATION & CREATIVITY",
     description: "Cutting-edge technologies and creative approaches to solve complex problems.",
     icon: "/services/innovation.jpeg"
   },
   {
-    title: "Client-Centric Approach",
+    title: "CLIENT-CENTRIC APPROACH",
     description: "We prioritize your business goals, ensuring solutions are aligned with your vision.",
     icon: "/services/client1.jpeg"
   },
   {
-    title: "Agile Methodologies",
+    title: "AGILE METHODOLOGIES",
     description: "Rapid development cycles and flexible adjustments to meet changing needs.",
     icon: "/services/agile.jpeg"
   },
   {
-    title: "Transparency & Integrity",
+    title: "TRANSPARENCY & INTEGRITY",
     description: "Clear communication and ethical practices at every stage of the project.",
     icon: "/services/transparency.jpeg"
   },
   {
-    title: "Scalable & Reliable Solutions",
+    title: "SCALABLE & RELIABLE SOLUTIONS",
     description: "Robust architectures designed to grow and adapt alongside your business.",
     icon: "/services/scalable.jpeg"
   }
@@ -101,50 +100,44 @@ const whyChooseUs = [
 
 const services = [
   {
-    title: "Web Development",
+    title: "WEB DEVELOPMENT",
     description: "Custom web applications tailored to your business needs.",
     icon: "/services/webser1.jpeg",
   },
   {
-    title: "Fullstack Development",
+    title: "FULLSTACK DEVELOPMENT",
     description: "Turn your data into actionable insights for better decision-making.",
     icon: "/services/fullstack2.jpeg",
   },
   {
-    title: "Mobile Development",
+    title: "MOBILE DEVELOPMENT",
     description: "Native and cross-platform mobile apps for iOS and Android.",
     icon: "/mobileDev1.jpeg"
   },
   {
-    title: "Cloud Solutions",
+    title: "CLOUD SOLUTIONS",
     description: "Scalable and secure cloud infrastructure and services.",
     icon: "/services/cloudser.jpeg",
   },
   {
-    title: "Quality Assurance & Testing",
+    title: "QUALITY ASSURANCE & TESTING",
     description: "Intelligent solutions to automate and optimize processes.",
     icon: "/services/qa2.jpeg",
   },
-
   {
-    title: "DEVOPS & CI/CD Services",
+    title: "DEVOPS & CI/CD SERVICES",
     description: "Protect your digital assets with our robust security solutions.",
     icon: "/services/devops.jpeg",
   },
   {
-    title: "Dedicated Development Team",
+    title: "DEDICATED DEVELOPMENT TEAM",
     description: "Hire skilled experts for portal development with latest tech expertise.",
     icon: "/services/dedicated.jpeg",
   },
-  
   {
-    title: "SaaS Development",
+    title: "SAAS DEVELOPMENT",
     description: "We create distinct software services within one unified platform.",
     icon: "/services/saas.jpeg",
   },
-
-  
-  
-
-]
+];
 

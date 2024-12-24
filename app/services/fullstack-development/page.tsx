@@ -55,7 +55,7 @@ export default function FullstackDevelopment() {
 
         {/* Technologies */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
+          <h2 className="text-2xl font-bold mb-8">TECHNOLOGIES WE USE</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div

@@ -6,13 +6,13 @@ import { CheckCircle } from 'lucide-react'
 export default function CloudSolutions() {
   return (
     <ServiceLayout
-      title="Cloud Solutions"
+      title="CLOUD SOLUTIONS"
       subtitle="Scalable and secure cloud infrastructure and services for modern businesses"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Cloud Solutions Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR CLOUD SOLUTIONS EXPERTISE</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
@@ -35,7 +35,7 @@ export default function CloudSolutions() {
         {/* Process */}
         <div className="grid md:grid-cols-2 ">
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Cloud Solutions Process</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR CLOUD SOLUTIONS PROCESS</h2>
           <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
@@ -55,7 +55,7 @@ export default function CloudSolutions() {
 
         {/* Technologies */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
+          <h2 className="text-2xl font-bold mb-8">TECHNOLOGIES WE USE</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div

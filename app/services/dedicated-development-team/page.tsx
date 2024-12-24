@@ -6,13 +6,13 @@ import { CheckCircle } from 'lucide-react'
 export default function DedicatedDevelopmentTeam() {
   return (
     <ServiceLayout
-      title="Dedicated Development Team"
+      title="DEDICATED DEVELOPMENT TEAM"
       subtitle="Access skilled development experts ready to bring your vision to life"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Dedicated Team Advantages</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR DEDICATED TEAM ADVANTAGES</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
@@ -35,7 +35,7 @@ export default function DedicatedDevelopmentTeam() {
         {/* Process */}
         <div className="grid md:grid-cols-2 ">
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Team Integration Process</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR TEAM INTEGRATION PROCESS</h2>
           <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
@@ -56,7 +56,7 @@ export default function DedicatedDevelopmentTeam() {
 
         {/* Expertise */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our Technical Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR TECHNICAL EXPERTISE</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {expertise.map((tech, index) => (
               <div

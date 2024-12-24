@@ -4,7 +4,7 @@ export default function Technologies() {
   return (
     <div className="bg-zinc-50 py-20">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-12">Our Technologies</h1>
+        <h1 className="text-4xl font-bold text-center mb-12">OUR TECHNOLOGIES</h1>
         <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           At CodeLab Technologies, we leverage cutting-edge technologies to deliver innovative solutions for our clients. Our expertise spans across various domains, ensuring we can tackle any challenge.
         </p>
