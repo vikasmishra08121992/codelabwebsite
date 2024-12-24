@@ -11,13 +11,13 @@ const slides = [
     {
         title: "Transforming Ideas Into Digital Reality",
         description: "We deliver innovative software solutions that drive business growth and efficiency.",
-        image: "/slider/slider3.png",
+        image: "/slider/1.jpeg",
         gradient: "from-orange-400 to-yellow-500",
     },
     {
         title: "Cutting-Edge Solutions for Modern Businesses",
         description: "Stay ahead of the competition with our innovative IT services.",
-        image: "/slider/slider3.png",
+        image: "/slider/3.jpeg",
         gradient: "from-purple-400 to-pink-500",
     },
     {

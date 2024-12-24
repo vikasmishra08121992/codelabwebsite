@@ -6,13 +6,13 @@ import { CheckCircle } from 'lucide-react'
 export default function DevOpsCICD() {
   return (
     <ServiceLayout
-      title="DevOps & CI/CD Services"
+      title="DEVOPS & CI/CD SERVICES"
       subtitle="Streamline your development and deployment processes for faster, more reliable software delivery"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our DevOps & CI/CD Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR DEVOPS & CI/CD EXPERTISE</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
@@ -35,7 +35,7 @@ export default function DevOpsCICD() {
         {/* Process */}
          <div className="grid md:grid-cols-2 ">
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our DevOps & CI/CD Implementation Process</h2>
+          <h2 className="text-2xl font-bold mb-8">OUR DEVOPS & CI/CD IMPLEMENTATION PROCESS</h2>
           <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
