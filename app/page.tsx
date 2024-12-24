@@ -11,7 +11,7 @@ export default function Home() {
       <Slider />
       
       <section className="py-4 bg-white">
-        <div className="container mx-auto px-4 mt-12">
+        <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Offshore Development Expertise</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
           Empowering your business with innovative offshore development services and tailored technology solutions. From skilled developers to end-to-end project execution, we ensure scalability, efficiency, and excellence in every delivery.
@@ -32,7 +32,7 @@ export default function Home() {
       <TechnologyShowcase />
 
       <section className="py-4  bg-white">
-        <div className="container mx-auto px-4 mt-12">
+        <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center  mb-12">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChooseUs.map((service, index) => (
@@ -49,8 +49,8 @@ export default function Home() {
 
     
 
-      <section className="bg-zinc-50 py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-zinc-50 py-10">
+        <div className="container mx-auto px-4 text-center mb-4">
           <h2 className="text-3xl font-bold mb-8">Empowering Businesses with Cutting-Edge IT Solutions</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
             We are dedicated to providing innovative IT solutions that drive growth and efficiency for businesses in the digital age.

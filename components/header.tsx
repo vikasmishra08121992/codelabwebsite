@@ -25,13 +25,13 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 drop-shadow-md ${
         isTransparent
           ? 'bg-white py-4' 
           : 'bg-white py-4'
       }`}
     >
-      <div className="container mx-auto px-4 bg-shadow">
+      <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo Section - Left */}
           <div className="flex-shrink-0">
