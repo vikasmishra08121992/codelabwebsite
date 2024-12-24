@@ -22,19 +22,35 @@ export default function Technologies() {
 }
 
 const technologies = [
-  { name: "React", icon: "/tech-icons/react.svg" },
-  { name: "Node.js", icon: "/tech-icons/nodejs.svg" },
-  { name: "Java", icon: "/tech-icons/java.svg" },
-  { name: "Angular", icon: "/tech-icons/angular.svg" },
- // { name: "Vue.js", icon: "/tech-icons/vuejs.svg" },
- // { name: "Django", icon: "/tech-icons/django.svg" },
-  { name: "Flutter", icon: "/tech-icons/flutter.svg" },
   { name: "AWS", icon: "/tech-icons/aws.svg" },
   { name: "Google Cloud", icon: "/tech-icons/gcp.svg" },
   { name: "Microsoft Azure", icon: "/tech-icons/azure.svg" },
-  { name: "Docker", icon: "/tech-icons/docker.svg" },
   { name: "Kubernetes", icon: "/tech-icons/kubernetes.svg" },
- // { name: "TensorFlow", icon: "/tech-icons/tensorflow.svg" },
- // { name: "PyTorch", icon: "/tech-icons/pytorch.svg" }
-]
+  { name: "Docker", icon: "/tech-icons/docker.svg" },
+  { name: "Terraform", icon: "/tech-icons/terraform.svg" },
+ 
+  { name: "React", icon: "/tech-icons/react.svg" },
+  { name: "Vue.js", icon: "/tech-icons/vue.svg" },
+  { name: "Angular", icon: "/tech-icons/angular.svg" },
+  { name: "Next.js", icon: "/tech-icons/nextjs.svg" },
+  { name: "Tailwind CSS", icon: "/tech-icons/tailwind.svg" },
+  { name: "Liferay", icon: "/tech-icons/liferay.svg" },
+  { name: "Node.js", icon: "/tech-icons/nodejs.svg" },
+  { name: "Python", icon: "/tech-icons/python.svg" },
+  { name: "ExpressJS", icon: "/tech-icons/expressjs.svg" },
+  { name: "Spring Boot", icon: "/tech-icons/springboot.svg" },
+  { name: "NextJS", icon: "/tech-icons/java.svg" },
+  { name: "NestJS", icon: "/tech-icons/nestjs.svg" },
+  { name: "PostgreSQL", icon: "/tech-icons/postgresql.svg" },
+  { name: "MongoDB", icon: "/tech-icons/mongodb.svg" },
+  { name: "MySQL", icon: "/tech-icons/mysql.svg" },
+  { name: "Redis", icon: "/tech-icons/redis.svg" },
+  { name: "Elasticsearch", icon: "/tech-icons/elasticsearch.svg" },
+  { name: "Native Android", icon: "/tech-icons/android.svg" },
+  { name: "Native iOS", icon: "/tech-icons/ios.svg" },
+  { name: "Swift", icon: "/tech-icons/swift.svg" },
+  { name: "Kotlin", icon: "/tech-icons/kotlin.svg" },
+  { name: "React Native", icon: "/tech-icons/react-native.svg" },
+  { name: "Flutter", icon: "/tech-icons/flutter.svg" }
+];
 

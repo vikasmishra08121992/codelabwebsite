@@ -5,9 +5,8 @@ import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 const categories = [
-  { id: 'generative-ai', name: 'Generative AI' },
+
   { id: 'cloud', name: 'Cloud' },
-  { id: 'data-engineering', name: 'Data Engineering' },
   { id: 'frontend', name: 'Frontend' },
   { id: 'backend', name: 'Backend' },
   { id: 'database', name: 'Database' },
@@ -15,38 +14,7 @@ const categories = [
 ]
 
 const technologies = {
-  'generative-ai': [
-    {
-      name: 'TensorFlow',
-      icon: '/tech-icons/tensorflow.svg',
-      description: 'Open-source machine learning framework'
-    },
-    {
-      name: 'PyTorch',
-      icon: '/tech-icons/pytorch.svg',
-      description: 'Deep learning framework for fast, flexible experimentation'
-    },
-    {
-      name: 'OpenAI GPT',
-      icon: '/tech-icons/openai.svg',
-      description: 'State-of-the-art language model for text generation'
-    },
-    {
-      name: 'DALL-E',
-      icon: '/tech-icons/dalle.svg',
-      description: 'AI system that creates images from text descriptions'
-    },
-    {
-      name: 'Stable Diffusion',
-      icon: '/tech-icons/stable-diffusion.svg',
-      description: 'Open-source text-to-image generation model'
-    },
-    {
-      name: 'Hugging Face',
-      icon: '/tech-icons/huggingface.svg',
-      description: 'Platform for building, training and deploying ML models'
-    }
-  ],
+
   cloud: [
     {
       name: 'AWS',
@@ -132,16 +100,16 @@ const technologies = {
       icon: '/tech-icons/nextjs.svg',
       description: 'React framework for production-grade applications'
     },
-    {
-      name: 'Svelte',
-      icon: '/tech-icons/svelte.svg',
-      description: 'Compiler for building fast web applications'
-    },
+
     {
       name: 'Tailwind CSS',
-      icon: '/tech-icons/tailwindcss.svg',
+      icon: '/tech-icons/tailwind.svg',
       description: 'Utility-first CSS framework'
-    }
+    }, {
+      name: 'Liferay',
+      icon: '/tech-icons/liferay.svg',
+      description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine'
+    },
   ],
   backend: [
     {
@@ -150,30 +118,39 @@ const technologies = {
       description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine'
     },
     {
+      name: 'Liferay',
+      icon: '/tech-icons/liferay.svg',
+      description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine'
+    },
+    {
       name: 'Python',
       icon: '/tech-icons/python.svg',
       description: 'Interpreted, high-level, general-purpose programming language'
     },
     {
-      name: 'Java',
+      name: 'ExpressJS',
+      icon: '/tech-icons/expressjs.svg',
+      description: 'Object-oriented programming language'
+    }
+    ,
+    {
+      name: 'Spring Boot',
+      icon: '/tech-icons/springboot.svg',
+      description: 'Object-oriented programming language'
+    }
+    ,
+    {
+      name: 'NextJS',
       icon: '/tech-icons/java.svg',
       description: 'Object-oriented programming language'
-    },
-    {
-      name: 'Go',
-      icon: '/tech-icons/go.svg',
-      description: 'Statically typed, compiled programming language'
-    },
-    {
-      name: 'Ruby on Rails',
-      icon: '/tech-icons/rails.svg',
-      description: 'Server-side web application framework written in Ruby'
-    },
-    {
-      name: 'Django',
-      icon: '/tech-icons/django.svg',
-      description: 'High-level Python web framework'
     }
+    ,
+    {
+      name: 'NestJS',
+      icon: '/tech-icons/nestjs.svg',
+      description: 'Object-oriented programming language'
+    }
+
   ],
   database: [
     {
@@ -200,11 +177,6 @@ const technologies = {
       name: 'Elasticsearch',
       icon: '/tech-icons/elasticsearch.svg',
       description: 'Distributed, RESTful search and analytics engine'
-    },
-    {
-      name: 'Cassandra',
-      icon: '/tech-icons/cassandra.svg',
-      description: 'Highly-scalable NoSQL database'
     }
   ],
   mobile: [
@@ -215,7 +187,7 @@ const technologies = {
     },
     {
       name: 'Native iOS',
-      icon: '/tech-icons/apple.svg',
+      icon: '/tech-icons/ios.svg',
       description: 'Develop native iOS applications'
     },
     {
@@ -237,11 +209,6 @@ const technologies = {
       name: 'Flutter',
       icon: '/tech-icons/flutter.svg',
       description: 'Beautiful native applications'
-    },
-    {
-      name: 'Firebase',
-      icon: '/tech-icons/firebase.svg',
-      description: 'Mobile backend and analytics'
     }
   ]
 }
@@ -254,10 +221,10 @@ export function TechnologyShowcase() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-orange inline-block px-6 py-2  rounded">
-          Technologies That Define Our Craft
+            Technologies That Define Our Craft
           </h2>
           <p className="text-gray-500 text-lg mt-4">
-          Our IT solutions are powered by the latest and most reliable technologies.
+            Our IT solutions are powered by the latest and most reliable technologies.
           </p>
         </div>
 
@@ -280,8 +247,8 @@ export function TechnologyShowcase() {
 
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll space-x-8 py-4">
-            {[...technologies[activeCategory as keyof typeof technologies], 
-              ...technologies[activeCategory as keyof typeof technologies]].map((tech, index) => (
+            {[...technologies[activeCategory as keyof typeof technologies],
+            ...technologies[activeCategory as keyof typeof technologies]].map((tech, index) => (
               <div
                 key={index}
                 className="flex-shrink-0 w-40 group"
@@ -296,7 +263,7 @@ export function TechnologyShowcase() {
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-gray-500 text-sm font-medium text-center group-hover:text-white transition-colors">
+                  <h3 className="text-gray-500 text-sm font-medium text-center group-hover:text-orange-500 transition-colors">
                     {tech.name}
                   </h3>
                 </div>

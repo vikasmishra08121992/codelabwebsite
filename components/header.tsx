@@ -31,7 +31,7 @@ const Header = () => {
           : 'bg-white py-4'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 bg-shadow">
         <div className="flex justify-between items-center">
           {/* Logo Section - Left */}
           <div className="flex-shrink-0">

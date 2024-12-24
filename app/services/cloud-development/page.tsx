@@ -146,18 +146,48 @@ const process = [
   }
 ]
 
+// const technologies = [
+//   { name: 'AWS', icon: '/tech-icons/aws.svg' },
+//   { name: 'Azure', icon: '/tech-icons/azure.svg' },
+//   { name: 'Google Cloud', icon: '/tech-icons/gcp.svg' },
+//   { name: 'Kubernetes', icon: '/tech-icons/kubernetes.svg' },
+//   { name: 'Docker', icon: '/tech-icons/docker.svg' },
+//   { name: 'Terraform', icon: '/tech-icons/terraform.svg' },
+//   { name: 'Ansible', icon: '/tech-icons/ansible.svg' },
+//   { name: 'CloudFormation', icon: '/tech-icons/cloudformation.svg' },
+//   { name: 'Lambda', icon: '/tech-icons/lambda.svg' },
+//   { name: 'Azure Functions', icon: '/tech-icons/azure-functions.svg' },
+//   { name: 'Cloud Run', icon: '/tech-icons/cloud-run.svg' },
+//   { name: 'Istio', icon: '/tech-icons/istio.svg' }
+// ]
 const technologies = [
-  { name: 'AWS', icon: '/tech-icons/aws.svg' },
-  { name: 'Azure', icon: '/tech-icons/azure.svg' },
-  { name: 'Google Cloud', icon: '/tech-icons/gcp.svg' },
-  { name: 'Kubernetes', icon: '/tech-icons/kubernetes.svg' },
-  { name: 'Docker', icon: '/tech-icons/docker.svg' },
-  { name: 'Terraform', icon: '/tech-icons/terraform.svg' },
-  { name: 'Ansible', icon: '/tech-icons/ansible.svg' },
-  { name: 'CloudFormation', icon: '/tech-icons/cloudformation.svg' },
-  { name: 'Lambda', icon: '/tech-icons/lambda.svg' },
-  { name: 'Azure Functions', icon: '/tech-icons/azure-functions.svg' },
-  { name: 'Cloud Run', icon: '/tech-icons/cloud-run.svg' },
-  { name: 'Istio', icon: '/tech-icons/istio.svg' }
-]
-
+{
+  name: 'AWS',
+  icon: '/tech-icons/aws.svg',
+  description: 'Comprehensive cloud computing platform'
+},
+{
+  name: 'Google Cloud',
+  icon: '/tech-icons/gcp.svg',
+  description: 'Suite of cloud computing services'
+},
+{
+  name: 'Microsoft Azure',
+  icon: '/tech-icons/azure.svg',
+  description: 'Cloud computing service for building, testing, and managing applications'
+},
+{
+  name: 'Kubernetes',
+  icon: '/tech-icons/kubernetes.svg',
+  description: 'Open-source container orchestration platform'
+},
+{
+  name: 'Docker',
+  icon: '/tech-icons/docker.svg',
+  description: 'Platform for developing, shipping, and running applications in containers'
+},
+{
+  name: 'Terraform',
+  icon: '/tech-icons/terraform.svg',
+  description: 'Infrastructure as Code software tool'
+}]
