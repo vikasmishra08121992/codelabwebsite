@@ -3,22 +3,22 @@ import { ServiceLayout } from '../../../components/service-layout';
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle } from 'lucide-react'
 
-export default function DevOpsCICD() {
+export default function SaaSDevelopment() {
   return (
     <ServiceLayout
-      title="DevOps & CI/CD Services"
-      subtitle="Streamline your development and deployment processes for faster, more reliable software delivery"
+      title="SaaS Development Services"
+      subtitle="Create scalable, multi-tenant software solutions that drive business growth"
     >
       <div className="grid gap-16">
         {/* Key Features */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our DevOps & CI/CD Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">Our SaaS Development Expertise</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="border-none shadow-lg">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-lg bg-orange-200 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center">
                       <feature.icon className="w-5 h-5 text-orange-600" />
                     </div>
                     <div>
@@ -33,9 +33,9 @@ export default function DevOpsCICD() {
         </section>
 
         {/* Process */}
-         <div className="grid md:grid-cols-2 ">
+        <div className="grid md:grid-cols-2 ">
         <section>
-          <h2 className="text-2xl font-bold mb-8">Our DevOps & CI/CD Implementation Process</h2>
+          <h2 className="text-2xl font-bold mb-8">Our SaaS Development Process</h2>
           <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
@@ -82,77 +82,73 @@ export default function DevOpsCICD() {
 
 const features = [
   {
-    title: 'Continuous Integration',
-    description: 'Automate code integration and testing for faster development cycles.',
+    title: 'Multi-tenant Architecture',
+    description: 'Secure and efficient handling of multiple customers on a single platform.',
     icon: CheckCircle
   },
   {
-    title: 'Continuous Delivery',
-    description: 'Streamline the process of deploying code to production environments.',
+    title: 'Scalable Infrastructure',
+    description: 'Cloud-native solutions that grow with your business needs.',
     icon: CheckCircle
   },
   {
-    title: 'Infrastructure as Code',
-    description: 'Manage and provision infrastructure using code and automation.',
+    title: 'Subscription Management',
+    description: 'Flexible billing and subscription handling systems.',
     icon: CheckCircle
   },
   {
-    title: 'Containerization',
-    description: 'Implement container technologies for consistent and portable deployments.',
+    title: 'Custom Integration',
+    description: 'Seamless integration with third-party services and APIs.',
     icon: CheckCircle
   },
   {
-    title: 'Monitoring and Logging',
-    description: 'Set up comprehensive monitoring and logging solutions for better insights.',
+    title: 'Analytics & Reporting',
+    description: 'Comprehensive analytics and reporting capabilities.',
     icon: CheckCircle
   },
   {
-    title: 'DevSecOps',
-    description: 'Integrate security practices throughout the development and deployment process.',
+    title: 'Security & Compliance',
+    description: 'Enterprise-grade security and regulatory compliance.',
     icon: CheckCircle
   }
 ]
 
 const process = [
   {
-    title: 'Assessment',
-    description: 'Evaluate current processes and identify areas for improvement.'
+    title: 'Discovery & Planning',
+    description: 'Understanding your business model and SaaS requirements.'
   },
   {
-    title: 'Strategy Development',
-    description: 'Create a tailored DevOps and CI/CD strategy for your organization.'
+    title: 'Architecture Design',
+    description: 'Designing scalable and secure multi-tenant architecture.'
   },
   {
-    title: 'Tool Selection',
-    description: 'Choose the right set of tools and technologies for your needs.'
+    title: 'Development',
+    description: 'Agile development with regular iterations and feedback.'
   },
   {
-    title: 'Implementation',
-    description: 'Set up and configure DevOps tools and CI/CD pipelines.'
+    title: 'Testing & QA',
+    description: 'Comprehensive testing of functionality and performance.'
   },
   {
-    title: 'Training and Adoption',
-    description: 'Train your team and facilitate the adoption of new practices.'
+    title: 'Deployment',
+    description: 'Smooth deployment and infrastructure setup.'
   },
   {
-    title: 'Continuous Improvement',
-    description: 'Regularly review and optimize your DevOps and CI/CD processes.'
+    title: 'Maintenance & Support',
+    description: 'Ongoing support and feature enhancement.'
   }
 ]
 
 const technologies = [
-  { name: 'Jenkins', icon: '/tech-icons/jenkins.svg' },
-  { name: 'GitHub', icon: '/tech-icons/GitHub_Logo.png' },
+  { name: 'React', icon: '/tech-icons/react.svg' },
+  { name: 'Node.js', icon: '/tech-icons/nodejs.svg' },
+  { name: 'PostgreSQL', icon: '/tech-icons/postgresql.svg' },
+  { name: 'MongoDB', icon: '/tech-icons/mongodb.svg' },
+  { name: 'Redis', icon: '/tech-icons/redis.svg' },
+  { name: 'AWS', icon: '/tech-icons/aws.svg' },
   { name: 'Docker', icon: '/tech-icons/docker.svg' },
   { name: 'Kubernetes', icon: '/tech-icons/kubernetes.svg' },
-  { name: 'Terraform', icon: '/tech-icons/terraform.svg' },
-  { name: 'Prometheus', icon: '/tech-icons/prometheus.svg' },
-  { name: 'Grafana', icon: '/tech-icons/grafana.svg' },
-  {
-    name: 'AWS',
-    icon: '/tech-icons/aws.svg',
-    description: 'Comprehensive cloud computing platform'
-  },
-  
+  { name: 'Elasticsearch', icon: '/tech-icons/elasticsearch.svg' }
 ]
 

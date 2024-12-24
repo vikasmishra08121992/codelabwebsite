@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Slider />
       
-      <section className="py-4 bg-white">
+      <section className="py-4 bg-zinc-50">
         <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Offshore Development Expertise</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
@@ -31,7 +31,7 @@ export default function Home() {
 
       <TechnologyShowcase />
 
-      <section className="py-4  bg-white">
+      <section className="py-4  bg-zinc-50">
         <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center  mb-12">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -49,7 +49,7 @@ export default function Home() {
 
     
 
-      <section className="bg-zinc-50 py-10">
+      <section className="bg-white py-10">
         <div className="container mx-auto px-4 text-center mb-4">
           <h2 className="text-3xl font-bold mb-8">Empowering Businesses with Cutting-Edge IT Solutions</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -134,13 +134,13 @@ const services = [
   {
     title: "Dedicated Development Team",
     description: "Hire skilled experts for portal development with latest tech expertise.",
-    icon: "/services/devops.jpeg",
+    icon: "/services/dedicated.jpeg",
   },
   
   {
     title: "SaaS Development",
     description: "We create distinct software services within one unified platform.",
-    icon: "/services/devops.jpeg",
+    icon: "/services/saas.jpeg",
   },
 
   

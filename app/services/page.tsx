@@ -76,6 +76,22 @@ const services = [
     ]
   },
   {
+    title: "SaaS Development",
+    shortDesc: "We create distinct software services within one unified platform.",
+    description: "Transform your business idea into a scalable SaaS solution. Our SaaS development services focus on creating flexible, multi-tenant applications that can serve diverse client needs through a single, unified platform. We implement robust architecture, secure user management, subscription billing, and analytics to help you deliver value to your customers while maintaining operational efficiency.",
+    icon: "/services/saas.jpeg",
+    serviceName: "saas-development",
+    link: "/services/saas-development"
+  },
+  {
+    title: "Dedicated Development Team",
+    shortDesc: "Hire skilled experts for portal development with latest tech expertise.",
+    description: "Access a pool of talented developers ready to join your team. Our dedicated development team service provides you with carefully selected professionals who bring extensive experience in portal development and the latest technologies. We ensure seamless integration with your existing workflow, maintaining clear communication and delivering consistent results while adapting to your specific requirements and methodologies.",
+    icon: "/services/dedicated.jpeg",
+    serviceName: "dedicated-development-team",
+    link: "/services/dedicated-development-team"
+  },
+  {
     title: "Cloud Solutions",
     shortDesc: "Harness the power of cloud computing for your business.",
     description: "Leverage the full potential of cloud computing with our comprehensive cloud solutions. We offer expertise in AWS, Azure, and Google Cloud platforms, providing services from cloud migration and infrastructure setup to optimization and maintenance. Our cloud solutions ensure scalability, security, and cost-effectiveness for your business operations.",

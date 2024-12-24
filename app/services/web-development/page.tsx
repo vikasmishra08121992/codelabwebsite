@@ -33,9 +33,10 @@ export default function WebDevelopment() {
         </section>
 
         {/* Process */}
+        <div className="grid md:grid-cols-2 ">
         <section>
           <h2 className="text-2xl font-bold mb-8">Our Development Process</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
                 {process.map((step, index) => (
@@ -49,21 +50,13 @@ export default function WebDevelopment() {
                 ))}
               </ul>
             </div>
-            <div className="relative aspect-square md:aspect-auto">
-              <Image
-                src="/services/webser1.jpeg"
-                alt="Web Development Process"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
           </div>
         </section>
 
         {/* Technologies */}
         <section>
           <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div
                 key={index}
@@ -81,6 +74,7 @@ export default function WebDevelopment() {
             ))}
           </div>
         </section>
+      </div>
       </div>
     </ServiceLayout>
   )
@@ -148,17 +142,42 @@ const process = [
 
 const technologies = [
   { name: 'React', icon: '/tech-icons/react.svg' },
+  { name: 'Angular', icon: '/tech-icons/angular.svg' },
   { name: 'Next.js', icon: '/tech-icons/nextjs.svg' },
   { name: 'Node.js', icon: '/tech-icons/nodejs.svg' },
-  { name: 'TypeScript', icon: '/tech-icons/typescript.svg' },
   { name: 'Python', icon: '/tech-icons/python.svg' },
-  { name: 'Django', icon: '/tech-icons/django.svg' },
   { name: 'PostgreSQL', icon: '/tech-icons/postgresql.svg' },
   { name: 'MongoDB', icon: '/tech-icons/mongodb.svg' },
   { name: 'AWS', icon: '/tech-icons/aws.svg' },
   { name: 'Docker', icon: '/tech-icons/docker.svg' },
-  { name: 'GraphQL', icon: '/tech-icons/graphql.svg' },
-  { name: 'Redis', icon: '/tech-icons/redis.svg' }
+  { name: 'Redis', icon: '/tech-icons/redis.svg' },
+  { name: 'Java', icon: '/tech-icons/java.svg' },
+  {
+    name: 'AWS',
+    icon: '/tech-icons/aws.svg',
+
+  },{
+    name: 'Google Cloud',
+    icon: '/tech-icons/gcp.svg',
+    description: 'Suite of cloud computing services'
+  },
+  {
+    name: 'Microsoft Azure',
+    icon: '/tech-icons/azure.svg',
+    description: 'Cloud computing service for building, testing, and managing applications'
+  },
+  {
+    name: 'Kubernetes',
+    icon: '/tech-icons/kubernetes.svg',
+    description: 'Open-source container orchestration platform'
+  },
+  {
+    name: 'Docker',
+    icon: '/tech-icons/docker.svg',
+    description: 'Platform for developing, shipping, and running applications in containers'
+  }
 ]
+
+
 
 

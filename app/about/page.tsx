@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row items-center mb-20">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <Image src="/aboutus.png" alt="About CodeLab Technologies" width={500} height={400} />
+            <Image src="/aboutus.jpeg" alt="About CodeLab Technologies" width={500} height={400} />
           </div>
           <div className="md:w-1/2 md:pl-10">
             <h2 className="text-2xl font-semibold mb-4">Our Mission & Vision</h2>

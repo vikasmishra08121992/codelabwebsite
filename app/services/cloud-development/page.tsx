@@ -33,9 +33,10 @@ export default function CloudSolutions() {
         </section>
 
         {/* Process */}
+        <div className="grid md:grid-cols-2 ">
         <section>
           <h2 className="text-2xl font-bold mb-8">Our Cloud Solutions Process</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
                 {process.map((step, index) => (
@@ -49,21 +50,13 @@ export default function CloudSolutions() {
                 ))}
               </ul>
             </div>
-            <div className="relative aspect-square md:aspect-auto">
-              <Image
-                src="/services/cloud-solutions-process.jpg"
-                alt="Cloud Solutions Process"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
           </div>
         </section>
 
         {/* Technologies */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">Cloud Technologies We Use</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div
                 key={index}
@@ -81,6 +74,7 @@ export default function CloudSolutions() {
             ))}
           </div>
         </section>
+      </div>
       </div>
     </ServiceLayout>
   )

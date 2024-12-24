@@ -33,9 +33,10 @@ export default function QualityAssuranceTesting() {
         </section>
 
         {/* Process */}
+        <div className="grid md:grid-cols-2 ">
         <section>
           <h2 className="text-2xl font-bold mb-8">Our Quality Assurance & Testing Process</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
                 {process.map((step, index) => (
@@ -49,21 +50,13 @@ export default function QualityAssuranceTesting() {
                 ))}
               </ul>
             </div>
-            <div className="relative aspect-square md:aspect-auto">
-              <Image
-                src="/services/qa-testing-process.jpg"
-                alt="Quality Assurance & Testing Process"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
           </div>
         </section>
 
         {/* Technologies */}
         <section>
-          <h2 className="text-2xl font-bold mb-8">QA & Testing Tools We Use</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div
                 key={index}
@@ -81,6 +74,7 @@ export default function QualityAssuranceTesting() {
             ))}
           </div>
         </section>
+      </div>
       </div>
     </ServiceLayout>
   )
@@ -149,15 +143,9 @@ const process = [
 const technologies = [
   { name: 'Selenium', icon: '/tech-icons/selenium.svg' },
   { name: 'JUnit', icon: '/tech-icons/junit.svg' },
-  { name: 'TestNG', icon: '/tech-icons/testng.svg' },
-  { name: 'Cypress', icon: '/tech-icons/cypress.svg' },
-  { name: 'Appium', icon: '/tech-icons/appium.svg' },
   { name: 'JMeter', icon: '/tech-icons/jmeter.svg' },
   { name: 'Postman', icon: '/tech-icons/postman.svg' },
-  { name: 'SonarQube', icon: '/tech-icons/sonarqube.svg' },
   { name: 'TestRail', icon: '/tech-icons/testrail.svg' },
   { name: 'Jenkins', icon: '/tech-icons/jenkins.svg' },
-  { name: 'Cucumber', icon: '/tech-icons/cucumber.svg' },
-  { name: 'Gatling', icon: '/tech-icons/gatling.svg' }
 ]
 

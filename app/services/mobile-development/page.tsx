@@ -33,9 +33,10 @@ export default function MobileDevelopment() {
         </section>
 
         {/* Process */}
+        <div className="grid md:grid-cols-2 ">
         <section>
           <h2 className="text-2xl font-bold mb-8">Our Mobile Development Process</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid  gap-8">
             <div>
               <ul className="space-y-4">
                 {process.map((step, index) => (
@@ -49,21 +50,13 @@ export default function MobileDevelopment() {
                 ))}
               </ul>
             </div>
-            <div className="relative aspect-square md:aspect-auto">
-              <Image
-                src="/services/mobile-dev-process.jpg"
-                alt="Mobile Development Process"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
           </div>
         </section>
 
         {/* Technologies */}
         <section>
           <h2 className="text-2xl font-bold mb-8">Technologies We Use</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div
                 key={index}
@@ -81,6 +74,7 @@ export default function MobileDevelopment() {
             ))}
           </div>
         </section>
+      </div>
       </div>
     </ServiceLayout>
   )
@@ -147,16 +141,34 @@ const process = [
 ]
 
 const technologies = [
-  { name: 'Swift', icon: '/tech-icons/swift.svg' },
-  { name: 'Kotlin', icon: '/tech-icons/kotlin.svg' },
-  { name: 'React Native', icon: '/tech-icons/react-native.svg' },
-  { name: 'Flutter', icon: '/tech-icons/flutter.svg' },
-  { name: 'Xamarin', icon: '/tech-icons/xamarin.svg' },
-  { name: 'Firebase', icon: '/tech-icons/firebase.svg' },
-  { name: 'Android Studio', icon: '/tech-icons/android-studio.svg' },
-  { name: 'Xcode', icon: '/tech-icons/xcode.svg' },
-  { name: 'AppCenter', icon: '/tech-icons/appcenter.svg' },
-  { name: 'Fastlane', icon: '/tech-icons/fastlane.svg' },
-  { name: 'Unity', icon: '/tech-icons/unity.svg' },
-  { name: 'ARKit', icon: '/tech-icons/arkit.svg' }
+  {
+    name: 'Native Android',
+    icon: '/tech-icons/android.svg',
+    description: 'Build native Android applications'
+  },
+  {
+    name: 'Native iOS',
+    icon: '/tech-icons/ios.svg',
+    description: 'Develop native iOS applications'
+  },
+  {
+    name: 'Swift',
+    icon: '/tech-icons/swift.svg',
+    description: 'Modern programming for iOS'
+  },
+  {
+    name: 'Kotlin',
+    icon: '/tech-icons/kotlin.svg',
+    description: 'Modern Android development'
+  },
+  {
+    name: 'React Native',
+    icon: '/tech-icons/react-native.svg',
+    description: 'Cross-platform mobile apps'
+  },
+  {
+    name: 'Flutter',
+    icon: '/tech-icons/flutter.svg',
+    description: 'Beautiful native applications'
+  }
 ]
