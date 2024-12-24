@@ -147,5 +147,7 @@ const technologies = [
   { name: 'Postman', icon: '/tech-icons/postman.svg' },
   { name: 'TestRail', icon: '/tech-icons/testrail.svg' },
   { name: 'Jenkins', icon: '/tech-icons/jenkins.svg' },
+  { name: 'TestNG', icon: '/tech-icons/testng.png' },
+     { name: 'Nunit', icon: '/tech-icons/Nunit.png' },
 ]
 

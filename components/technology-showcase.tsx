@@ -6,11 +6,14 @@ import { cn } from '@/lib/utils'
 
 const categories = [
 
-  { id: 'cloud', name: 'Cloud' },
-  { id: 'frontend', name: 'Frontend' },
   { id: 'backend', name: 'Backend' },
+  { id: 'cloud', name: 'Cloud' },
   { id: 'database', name: 'Database' },
-  { id: 'mobile', name: 'Mobile' }
+  { id: 'frontend', name: 'Frontend' },
+  { id: 'mobile', name: 'Mobile' },
+  { id: 'qa', name: 'Quality Assurance' }
+  
+
 ]
 
 const technologies = {
@@ -151,6 +154,16 @@ const technologies = {
       description: 'Object-oriented programming language'
     }
 
+  ],
+  qa : [
+    { name: 'Selenium', icon: '/tech-icons/selenium.svg' },
+    { name: 'JUnit', icon: '/tech-icons/junit1.svg' },
+    { name: 'JMeter', icon: '/tech-icons/jmeter.svg' },
+    { name: 'Postman', icon: '/tech-icons/postman.svg' },
+    { name: 'TestRail', icon: '/tech-icons/testrail.svg' },
+    { name: 'Jenkins', icon: '/tech-icons/jenkins.svg' },
+     { name: 'TestNG', icon: '/tech-icons/testng.png' },
+     { name: 'Nunit', icon: '/tech-icons/Nunit.png' },
   ],
   database: [
     {
