@@ -11,19 +11,19 @@ const slides = [
     {
         title: "Transforming Ideas Into Digital Reality",
         description: "We deliver innovative software solutions that drive business growth and efficiency.",
-        image: "/slider/1.jpeg",
+        image: "/slider/8.png",
         gradient: "from-orange-400 to-yellow-500",
     },
     {
         title: "Cutting-Edge Solutions for Modern Businesses",
         description: "Stay ahead of the competition with our innovative IT services.",
-        image: "/slider/3.jpeg",
+        image: "/slider/cut1.png",
         gradient: "from-purple-400 to-pink-500",
     },
     {
         title: "Empower Your Digital Transformation",
         description: "Partner with us to revolutionize your business in the digital age.",
-        image: "/slider/slider3.png",
+        image: "/slider/emp2.png",
         gradient: "from-blue-400 to-cyan-500",
     },
 ]
@@ -37,7 +37,7 @@ export function Slider() {
             if (!isAnimating) {
                 setCurrentSlide((prev) => (prev + 1) % slides.length)
             }
-        }, 5000)
+        }, 10000)
 
         return () => clearInterval(timer)
     }, [isAnimating])
@@ -65,7 +65,7 @@ export function Slider() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 1 }}
                 >
                     <Image
                         src={slides[currentSlide].image}
