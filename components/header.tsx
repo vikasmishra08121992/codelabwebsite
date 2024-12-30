@@ -55,6 +55,7 @@ const Header = () => {
                   { name: 'HOME', path: '/' },
                   { name: 'SERVICES', path: '/services' },
                   { name: 'ABOUT', path: '/about' },
+                  { name: 'BLOG', path: '/blog' },
                   { name: 'TECHNOLOGIES', path: '/technologies' }
                 ].map((item) => (
                   <li key={item.name}>

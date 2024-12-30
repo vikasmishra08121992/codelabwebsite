@@ -6,7 +6,7 @@ export default function Blog() {
     <div className="py-20">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Our Blog</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogPosts.map((post, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
               <Image src={post.image} alt={post.title} width={400} height={200} className="w-full h-48 object-cover" />
@@ -45,22 +45,22 @@ const blogPosts = [
     slug: "securing-digital-assets"
   },
   {
-    title: "The Rise of Progressive Web Apps",
-    excerpt: "Understand the benefits of PWAs and why they're becoming increasingly popular.",
+    title: "Agile Methodologies in Service Management",
+    excerpt: "Streamline service delivery with Agile practices to enhance flexibility, collaboration, and customer satisfaction.",
     image: "/blog-images/pwa.jpg",
-    slug: "rise-of-progressive-web-apps"
+    slug: "agile-service-management"
   },
   {
-    title: "Machine Learning: From Theory to Practice",
-    excerpt: "A comprehensive guide to implementing machine learning in real-world scenarios.",
+    title: "Sustainability in Service Offerings",
+    excerpt: "Integrate eco-friendly practices into services to reduce environmental impact and meet evolving customer expectations",
     image: "/blog-images/machine-learning.jpg",
-    slug: "machine-learning-theory-to-practice"
+    slug: "sustainability-in-services"
   },
   {
-    title: "The Impact of 5G on Mobile App Development",
-    excerpt: "Explore how 5G technology is revolutionizing mobile app capabilities and user experiences.",
+    title: "SOLID Principles in Java",
+    excerpt: "A set of object-oriented design guidelines (SRP, OCP, LSP, ISP, DIP) that promote clean, scalable, and maintainable software development.",
     image: "/blog-images/5g-mobile.jpg",
-    slug: "5g-impact-on-mobile-development"
+    slug: "solid-principles-java"
   }
 ]
 
