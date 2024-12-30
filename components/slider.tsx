@@ -9,6 +9,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const slides = [
     {
+        title: "Dedicated Development Solutions",
+        description: "Leverage our expertise to build tailored software solutions that drive your business forward.",
+        image: "/slider/emp2.png",
+        gradient: "from-blue-400 to-cyan-500",
+    },
+    {
         title: "Transforming Ideas Into Digital Reality",
         description: "We deliver innovative software solutions that drive business growth and efficiency.",
         image: "/slider/8.png",
@@ -23,7 +29,7 @@ const slides = [
     {
         title: "Empower Your Digital Transformation",
         description: "Partner with us to revolutionize your business in the digital age.",
-        image: "/slider/emp2.png",
+        image: "/slider/emp10.png",
         gradient: "from-blue-400 to-cyan-500",
     },
 ]
