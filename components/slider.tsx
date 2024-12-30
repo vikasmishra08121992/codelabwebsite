@@ -29,7 +29,7 @@ const slides = [
     {
         title: "Empower Your Digital Transformation",
         description: "Partner with us to revolutionize your business in the digital age.",
-        image: "/slider/emp10.png",
+        image: "/slider/emp11.png",
         gradient: "from-blue-400 to-cyan-500",
     },
 ]
