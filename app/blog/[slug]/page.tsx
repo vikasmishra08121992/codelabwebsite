@@ -64,8 +64,8 @@ export default function BlogPost({ params }: BlogPostProps) {
           src={post.image}
           alt={post.title}
           width={1200}
-          height={600}
-          className="w-full h-[60vh] object-cover rounded-lg"
+          height={800}
+          className="w-full h-full object-cover rounded-lg"
         />
       </header>
 

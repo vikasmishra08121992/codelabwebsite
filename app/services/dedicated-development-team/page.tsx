@@ -8,6 +8,7 @@ export default function DedicatedDevelopmentTeam() {
     <ServiceLayout
       title="DEDICATED DEVELOPMENT TEAM"
       subtitle="Access skilled development experts ready to bring your vision to life"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}

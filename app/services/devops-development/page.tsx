@@ -8,6 +8,7 @@ export default function DevOpsCICD() {
     <ServiceLayout
       title="DEVOPS & CI/CD SERVICES"
       subtitle="Streamline your development and deployment processes for faster, more reliable software delivery"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}

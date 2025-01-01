@@ -8,6 +8,7 @@ export default function MobileDevelopment() {
     <ServiceLayout
       title="MOBILE DEVELOPMENT SERVICES"
       subtitle="Build powerful, user-friendly mobile applications for iOS and Android platforms"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}

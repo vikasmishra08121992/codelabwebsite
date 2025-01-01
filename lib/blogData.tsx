@@ -35,9 +35,9 @@ export interface BlogPost {
   export const blogPosts: BlogPost[] = [
     {
         "slug": "future-of-ai-in-business",
-        "title": "The Future of AI in Business",
+        "title": "THE FUTURE OF AI IN BUSINESS",
         "excerpt": "Explore how artificial intelligence is reshaping industries and driving innovation.",
-        "image": "/blog-images/ai-business.jpg",
+        "image": "/blog-images/TheFutureofAIinBusiness_1.jpeg",
         "headerDescription": "Artificial Intelligence is revolutionizing the way businesses operate. Discover the key trends and impacts of AI in various industries.",
         "mainContent": `
           <p>Artificial Intelligence (AI) has become a pivotal force in reshaping the business world. Its ability to automate, analyze, and innovate is helping organizations achieve unprecedented levels of efficiency and effectiveness. The future of AI will see it deeply embedded in every facet of business operations, driving competitive advantages.</p>
@@ -94,7 +94,7 @@ export interface BlogPost {
         "slug": "cloud-migration-strategies",
         "title": "5 R's of Cloud Migration Strategies for Enterprises",
         "excerpt": "Understand the five key strategies for cloud migration and their applications in modern enterprises.",
-        "image": "/blog-images/cloud-migration.jpg",
+        "image": "/blog-images/Cloud_Migration_Strategies_for_Enterprises_1.jpeg",
         "headerDescription": "Explore the 5 R's of cloud migration, including their benefits, challenges, and when to use them in your cloud transformation journey.",
         "mainContent": `
           <p>Cloud migration has become a cornerstone for enterprises aiming to modernize their IT systems and achieve scalability. The 5 R's provide a strategic framework to plan, execute, and optimize the migration process. Each strategy aligns with specific business needs and technical capabilities.</p>
@@ -155,9 +155,9 @@ export interface BlogPost {
         "technologyDescription": "Cloud platforms such as AWS, Azure, and Google Cloud provide tailored tools and services to support all 5 R's of migration, enabling seamless and efficient transitions."
       },{
         "slug": "securing-digital-assets",
-        "title": "Securing Your Digital Assets: Best Practices",
+        "title": "SECURING YOUR DIGITAL ASSETS: BEST PRACTICES",
         "excerpt": "Learn essential strategies to protect your digital assets from cyber threats.",
-        "image": "/blog-images/securing-digital-assets.jpg",
+        "image": "/blog-images/Securing_Your_Digital_Assets_1.jpeg",
         "headerDescription": "Cybersecurity is critical in today’s digital landscape. Discover best practices to safeguard your digital assets and mitigate risks.",
         "mainContent": `
           <p>In an increasingly digital world, protecting your digital assets has never been more crucial. From sensitive data to intellectual property, ensuring robust security measures can help businesses and individuals avoid costly breaches and data loss. Here, we explore best practices to secure your digital assets effectively.</p>
@@ -283,9 +283,9 @@ export interface BlogPost {
         "technologyDescription": "Technologies such as firewalls, encryption tools, endpoint protection platforms, and security information and event management (SIEM) systems form the backbone of digital asset security. Combining these with regular audits and training ensures comprehensive protection."
       },{
         "slug": "agile-service-management",
-        "title": "Agile Methodologies in Service Management",
+        "title": "AGILE METHODOLOGIES IN SERVICE MANAGEMENT",
         "excerpt": "Discover how Agile methodologies are transforming service management to enhance flexibility, collaboration, and efficiency.",
-        "image": "/blog-images/agile-service-management.jpg",
+        "image": "/blog-images/Agile_Methodologies_in_Service_Management_1.jpeg",
         "headerDescription": "Agile methodologies bring speed and adaptability to service management processes. Learn how to apply Agile principles to enhance service delivery and customer satisfaction.",
         "mainContent": `
           <p>Agile methodologies, originally developed for software development, are now being widely adopted in service management. Agile in service management emphasizes iterative improvement, collaboration, and adaptability, enabling organizations to respond to customer needs quickly and effectively.</p>
@@ -303,10 +303,10 @@ export interface BlogPost {
                 <li>Collaboration between teams to streamline workflows.</li>
               </ul>
             `,
-            "image": {
-              "src": "/blog-images/agile-definition.jpg",
-              "alt": "Agile service management process flow"
-            }
+            // "image": {
+            //   "src": "/blog-images/agile-definition.jpg",
+            //   "alt": "Agile service management process flow"
+            // }
           },
           {
             "type": "content",
@@ -332,10 +332,10 @@ export interface BlogPost {
               <p><strong>3. Continuous Improvement:</strong> Conduct regular retrospectives to identify and implement process enhancements.</p>
               <p><strong>4. Prioritization Techniques:</strong> Use frameworks like MoSCoW (Must-Have, Should-Have, Could-Have, Won’t-Have) to focus on delivering the most value.</p>
             `,
-            "image": {
-              "src": "/blog-images/agile-practices.jpg",
-              "alt": "Kanban board example for service management"
-            }
+            // "image": {
+            //   "src": "/blog-images/agile-practices.jpg",
+            //   "alt": "Kanban board example for service management"
+            // }
           },
           {
             "type": "examples",
@@ -347,10 +347,10 @@ export interface BlogPost {
               "Conducting regular customer feedback sessions to improve services.",
               "Applying automation tools to streamline routine service management tasks."
             ],
-            "image": {
-              "src": "/blog-images/agile-examples.jpg",
-              "alt": "Examples of Agile methodologies in action"
-            }
+            // "image": {
+            //   "src": "/blog-images/agile-examples.jpg",
+            //   "alt": "Examples of Agile methodologies in action"
+            // }
           },
           {
             "type": "industries",
@@ -367,9 +367,9 @@ export interface BlogPost {
         "technologyDescription": "Tools like Jira, ServiceNow, and Trello support Agile practices in service management by enabling workflow visualization, sprint planning, and collaboration. By combining these tools with Agile principles, organizations can drive greater efficiency and responsiveness."
       },{
         "slug": "sustainability-in-services",
-        "title": "Sustainability in Service Offerings",
+        "title": "SUSTAINABILITY IN SERVICE OFFERINGS",
         "excerpt": "Explore how sustainability is shaping modern service offerings and contributing to a greener future.",
-        "image": "/blog-images/sustainability-in-services.jpg",
+        "image": "/blog-images/Sustainability_in_Service_Offerings.jpeg",
         "headerDescription": "Sustainability is a key driver in transforming service offerings. Learn how organizations can integrate eco-friendly practices into their services to meet customer expectations and environmental goals.",
         "mainContent": `
           <p>Sustainability in service offerings is becoming a strategic priority for businesses worldwide. Customers increasingly demand services that not only meet their needs but also align with environmental and social values. Incorporating sustainable practices into service design, delivery, and management helps organizations reduce their environmental impact while staying competitive.</p>
@@ -388,10 +388,10 @@ export interface BlogPost {
                 <li>Enhances resilience against environmental and social risks.</li>
               </ul>
             `,
-            "image": {
-              "src": "/blog-images/sustainability-importance.jpg",
-              "alt": "Why sustainability matters in services"
-            }
+            // "image": {
+            //   "src": "/blog-images/sustainability-importance.jpg",
+            //   "alt": "Why sustainability matters in services"
+            // }
           },
           {
             "type": "content",
@@ -418,10 +418,10 @@ export interface BlogPost {
                 <li>Use green logistics and reduce packaging waste.</li>
               </ul>
             `,
-            "image": {
-              "src": "/blog-images/sustainable-delivery.jpg",
-              "alt": "Sustainable service delivery in action"
-            }
+            // "image": {
+            //   "src": "/blog-images/sustainable-delivery.jpg",
+            //   "alt": "Sustainable service delivery in action"
+            // }
           },
           {
             "type": "examples",
@@ -433,10 +433,10 @@ export interface BlogPost {
               "Paperless banking services that minimize paper waste.",
               "E-waste recycling programs offered by tech companies."
             ],
-            "image": {
-              "src": "/blog-images/sustainability-examples.jpg",
-              "alt": "Examples of sustainable service offerings"
-            }
+            // "image": {
+            //   "src": "/blog-images/sustainability-examples.jpg",
+            //   "alt": "Examples of sustainable service offerings"
+            // }
           },
           {
             "type": "industries",
@@ -453,9 +453,9 @@ export interface BlogPost {
         "technologyDescription": "Technologies like IoT, AI, and blockchain are driving sustainability in services by enabling efficient resource management, real-time tracking, and transparent supply chains. These innovations help organizations measure and reduce their environmental impacts while delivering value to customers."
       },{
         "slug": "solid-principles-java",
-        "title": "SOLID Principles in Java",
+        "title": "SOLID PRINCIPLES IN JAVA",
         "excerpt": "Learn how to implement SOLID principles in Java to create maintainable and scalable software designs.",
-        "image": "/blog-images/solid-principles-java.jpg",
+        "image": "/blog-images/SOLID_Principles_in_JAVA_1.png",
         "headerDescription": "SOLID principles are the foundation of object-oriented programming. Explore how these principles apply in Java to create robust and flexible software.",
         "mainContent": `
           <p>SOLID principles are a set of design guidelines that help developers create software that is easy to understand, extend, and maintain. By adhering to these principles, Java developers can avoid code smells and create robust applications.</p>
@@ -473,10 +473,7 @@ export interface BlogPost {
               </ul>
               <p><strong>Example:</strong> A class handling user authentication should not also manage logging or database connections.</p>
             `,
-            "image": {
-              "src": "/blog-images/srp-example.jpg",
-              "alt": "Single Responsibility Principle example"
-            }
+           
           },
           {
             "type": "content",
@@ -490,10 +487,7 @@ export interface BlogPost {
               </ul>
               <p><strong>Example:</strong> Adding new types of payment methods without modifying the existing payment processing code.</p>
             `,
-            "image": {
-              "src": "/blog-images/ocp-example.jpg",
-              "alt": "Open/Closed Principle example"
-            }
+            
           },
           {
             "type": "content",
@@ -507,10 +501,7 @@ export interface BlogPost {
               </ul>
               <p><strong>Example:</strong> A method expecting a base class type should work seamlessly when passed a derived class instance.</p>
             `,
-            "image": {
-              "src": "/blog-images/lsp-example.jpg",
-              "alt": "Liskov Substitution Principle example"
-            }
+          
           },
           {
             "type": "content",
@@ -524,10 +515,7 @@ export interface BlogPost {
               </ul>
               <p><strong>Example:</strong> A "Printer" interface should not force a class to implement both print and scan functionalities if it only prints.</p>
             `,
-            "image": {
-              "src": "/blog-images/isp-example.jpg",
-              "alt": "Interface Segregation Principle example"
-            }
+            
           },
           {
             "type": "content",
@@ -541,10 +529,7 @@ export interface BlogPost {
               </ul>
               <p><strong>Example:</strong> A service class depends on an abstraction of a repository interface rather than a specific database implementation.</p>
             `,
-            "image": {
-              "src": "/blog-images/dip-example.jpg",
-              "alt": "Dependency Inversion Principle example"
-            }
+          
           }
         ],
         "technologyDescription": "Java's robust features, such as interfaces, abstract classes, and dependency injection frameworks like Spring, make it an ideal language to implement SOLID principles effectively, ensuring clean and maintainable code."

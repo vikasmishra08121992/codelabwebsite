@@ -8,6 +8,7 @@ export default function QualityAssuranceTesting() {
     <ServiceLayout
       title="QUALITY ASSURANCE & TESTING SERVICES"
       subtitle="Ensure the highest quality and reliability of your software products"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}

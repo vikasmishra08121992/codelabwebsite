@@ -8,6 +8,7 @@ export default function WebDevelopment() {
     <ServiceLayout
       title="WEB DEVELOPMENT SERVICES"
       subtitle="Create powerful, scalable web applications with modern technologies and best practices"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}
@@ -148,8 +149,7 @@ const technologies = [
   { name: 'Python', icon: '/tech-icons/python.svg' },
   { name: 'PostgreSQL', icon: '/tech-icons/postgresql.svg' },
   { name: 'MongoDB', icon: '/tech-icons/mongodb.svg' },
-  { name: 'AWS', icon: '/tech-icons/aws.svg' },
-  { name: 'Docker', icon: '/tech-icons/docker.svg' },
+
   { name: 'Redis', icon: '/tech-icons/redis.svg' },
   { name: 'Java', icon: '/tech-icons/java.svg' },
   {

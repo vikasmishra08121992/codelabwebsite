@@ -8,6 +8,7 @@ export default function FullstackDevelopment() {
     <ServiceLayout
       title="FULLSTACK DEVELOPMENT SERVICES"
       subtitle="End-to-end solutions covering both frontend and backend development"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}
@@ -146,9 +147,6 @@ const technologies = [
   { name: 'Next.js', icon: '/tech-icons/nextjs.svg' },
   { name: 'Node.js', icon: '/tech-icons/nodejs.svg' },
   { name: 'Python', icon: '/tech-icons/python.svg' },
-
-
-  { name: 'Docker', icon: '/tech-icons/docker.svg' },
   { name: 'Redis', icon: '/tech-icons/redis.svg' },
   { name: 'Java', icon: '/tech-icons/java.svg' },
   {

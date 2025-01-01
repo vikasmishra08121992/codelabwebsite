@@ -8,6 +8,7 @@ export default function CloudSolutions() {
     <ServiceLayout
       title="CLOUD SOLUTIONS"
       subtitle="Scalable and secure cloud infrastructure and services for modern businesses"
+      headerImage="/services/servicesHeader.png"
     >
       <div className="grid gap-16">
         {/* Key Features */}
