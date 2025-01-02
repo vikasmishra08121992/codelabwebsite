@@ -130,7 +130,7 @@ const Header = () => {
                       className={`text-l block py-4 px-4 ${
                         pathname === item.path 
                           ? 'bg-orange-500 text-white' 
-                          : 'text-orange-600 hover:bg-orange-50 bg-zinc-600'
+                          : 'text-orange-600 bg-white hover:bg-orange-500 hover:text-white'
                       }`}
                     >
                       {item.name}
