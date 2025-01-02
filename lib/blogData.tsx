@@ -455,7 +455,7 @@ export interface BlogPost {
         "slug": "solid-principles-java",
         "title": "SOLID PRINCIPLES IN JAVA",
         "excerpt": "Learn how to implement SOLID principles in Java to create maintainable and scalable software designs.",
-        "image": "/blog-images/SOLID_Principles_in_JAVA_1.png",
+        "image": "/blog-images/SOLID_Principles_in_JAVA_1_latest.png",
         "headerDescription": "SOLID principles are the foundation of object-oriented programming. Explore how these principles apply in Java to create robust and flexible software.",
         "mainContent": `
           <p>SOLID principles are a set of design guidelines that help developers create software that is easy to understand, extend, and maintain. By adhering to these principles, Java developers can avoid code smells and create robust applications.</p>

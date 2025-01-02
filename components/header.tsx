@@ -47,10 +47,11 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center relative z-10">
               <Image 
-                src={isTransparent ? "/TECHNOLOGIES.png" : "/TECHNOLOGIES.png"}
+                src="/TECHNOLOGIES.png"
                 alt="CodeLab Technologies Logo" 
                 width={200} 
                 height={54}
+                priority
                 className="transition-opacity duration-300"
               />
             </Link>
@@ -59,9 +60,9 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden ml-auto mr-4"
+            className="lg:hidden ml-auto mr-4 bg-orange-500 p-2 rounded-md"
           >
-            <Menu className="h-6 w-6 text-gray-700" />
+            <Menu className="h-6 w-6 text-white" />
           </button>
 
           {/* Right side container for Navigation and Contact Button */}
@@ -101,21 +102,35 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-50 bg-white">
           <div className="p-4">
-            <button
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="absolute top-4 right-4"
-            >
-              <X className="h-6 w-6 text-gray-700" />
-            </button>
-            <nav className="mt-16">
+            <div className="flex items-center justify-between mb-8">
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                <Image 
+                  src="/TECHNOLOGIES.png"
+                  alt="CodeLab Technologies Logo" 
+                  width={200} 
+                  height={54}
+                  priority
+                  className="transition-opacity duration-300"
+                />
+              </Link>
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="bg-orange-500 p-2 rounded-md"
+              >
+                <X className="h-6 w-6 text-white" />
+              </button>
+            </div>
+            <nav>
               <ul className="space-y-4">
                 {navItems.map((item) => (
-                  <li key={item.name} className="border-b border-gray-100 py-2">
+                  <li key={item.name} className="border-b border-orange-200">
                     <Link 
                       href={item.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-l block ${
-                        pathname === item.path ? 'text-orange-500' : 'text-gray-700'
+                      className={`text-l block py-4 px-4 ${
+                        pathname === item.path 
+                          ? 'bg-orange-500 text-white' 
+                          : 'text-orange-600 hover:bg-orange-50 bg-zinc-600'
                       }`}
                     >
                       {item.name}

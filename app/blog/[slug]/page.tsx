@@ -60,13 +60,17 @@ export default function BlogPost({ params }: BlogPostProps) {
       <header className="mb-12">
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <p className="text-xl text-gray-600 mb-8">{post.headerDescription}</p>
-        <Image
-          src={post.image}
-          alt={post.title}
-          width={1200}
-          height={800}
-          className="w-full h-full object-cover rounded-lg"
-        />
+        <div className="flex justify-center">
+          <Image
+            src={post.image}
+            alt={post.title}
+            width={1200}
+            height={600} quality={100}
+            priority
+            unoptimized 
+            className="object-cover rounded-lg max-w-4xl w-full"
+          />
+        </div>
       </header>
 
       {/* Main Content */}

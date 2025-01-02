@@ -11,7 +11,9 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center text-center">
-              <Image src={service.icon} alt={service.title} width={150} height={150} className="mb-4" />
+              <Image src={service.icon} alt={service.title} width={150} height={150} quality={100}
+                priority
+                unoptimized className="mb-4" />
               <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <ul className="list-disc list-inside text-gray-600 ">

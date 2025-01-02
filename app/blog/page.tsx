@@ -11,7 +11,9 @@ export default function Blog() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogPosts.map((post, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center text-center">
-              <Image src={post.image} alt={post.title} width={400} height={200} className="w-full h-48 object-cover" />
+              <Image src={post.image} alt={post.title} width={400} height={200} className="w-full h-48 object-cover" quality={100}
+                priority
+                unoptimized />
               <div className="p-6">
                 <h2 className="text-2xl font-semibold mb-4">{post.title}</h2>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>

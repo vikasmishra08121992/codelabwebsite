@@ -8,20 +8,21 @@ export async function sendEmail(formData: FormData) {
   const message = formData.get('message') as string
 
   // In a real-world scenario, you would use environment variables for these
-  const transporter = nodemailer.createTransport({
-    host: "smtp.example.com",
+  var transporter = nodemailer.createTransport({
+    host: 'email-smtp.us-east-2.amazonaws.com',
     port: 587,
-    secure: false, // Use TLS
+    secure: false,
+    requireTLS: true,
     auth: {
-      user: "your_email@example.com",
-      pass: "your_password",
-    },
-  });
+        user: 'AKIARKLIGE3HM5KZNDWI',
+        pass: 'BLC5J7lZFVautX6wdS+AEkzSW7oFvGSvNkhXc8EFS22n'
+    }
+});
 
   try {
     const info = await transporter.sendMail({
-      from: '"CodeLab Contact" <contact@codelab.com>',
-      to: "recipient@example.com",
+      from: 'donotreply@cadopsus.com',
+      to: "info@codelabtechnolgoies.com",
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: `<p><strong>Name:</strong> ${name}</p>

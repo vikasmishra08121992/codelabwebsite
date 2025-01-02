@@ -9,18 +9,20 @@ export default function Home() {
   return (
     <div>
       <Slider />
-      
+
       <section className="py-4 bg-zinc-50">
         <div className="container mx-auto px-4 mt-12 mb-12">
           <h2 className="text-3xl font-bold text-center mb-6">OUR OFFSHORE DEVELOPMENT EXPERTISE</h2>
           <p className="text-xl text-gray-600 mb-8 text-center">
-          Empowering your business with innovative offshore development services and tailored technology solutions. From skilled developers to end-to-end project execution, we ensure scalability, efficiency, and excellence in every delivery.
+            Empowering your business with innovative offshore development services and tailored technology solutions. From skilled developers to end-to-end project execution, we ensure scalability, efficiency, and excellence in every delivery.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center text-center">
-                <Image src={service.icon} alt={service.title} width={150} height={150} className="mb-4  object-cover" />
+                <Image src={service.icon} alt={service.title} width={150} height={150} className="mb-4  quality={100}
+    priority
+    unoptimized  object-cover" />
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
@@ -37,7 +39,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChooseUs.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center text-center">
-                <Image src={service.icon} alt={service.title} width={150} height={150} className="mb-4 object-cover" />
+                <Image src={service.icon} alt={service.title} width={150} height={150} quality={100}
+                  priority
+                  unoptimized className="mb-4 object-cover" />
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
@@ -45,9 +49,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-    
 
-    
+
+
 
       <section className="bg-white py-10">
         <div className="container mx-auto px-4 text-center mb-4">
@@ -56,7 +60,7 @@ export default function Home() {
             We are dedicated to providing innovative IT solutions that drive growth and efficiency for businesses in the digital age.
           </p>
           <Link href="/about" className="bg-orange-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300">
-          LET'S CONNECT
+            LET'S CONNECT
           </Link>
         </div>
       </section>

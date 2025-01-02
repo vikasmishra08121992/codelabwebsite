@@ -76,7 +76,9 @@ export function Slider() {
                     <Image
                         src={slides[currentSlide].image}
                         alt={slides[currentSlide].title}
-                        layout="fill"
+                        layout="fill" quality={100}
+                        priority
+                        unoptimized 
                         objectFit="cover"
                     />
                     <div className="absolute inset-0" />
