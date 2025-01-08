@@ -157,7 +157,7 @@ const technologies = {
   ],
   qa : [
     { name: 'Selenium', icon: '/tech-icons/selenium.svg' },
-    { name: 'JUnit', icon: '/tech-icons/junit1.svg' },
+    { name: 'JUnit', icon: '/tech-icons/junitimage.svg' },
     { name: 'JMeter', icon: '/tech-icons/jmeter.svg' },
     { name: 'Postman', icon: '/tech-icons/postman.svg' },
     { name: 'TestRail', icon: '/tech-icons/testrail.svg' },
