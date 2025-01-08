@@ -1,28 +1,25 @@
 'use server'
 
-import  nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer'
 
 export async function sendEmail(formData: FormData) {
   const name = formData.get('name') as string
   const email = formData.get('email') as string
   const message = formData.get('message') as string
 
-  // In a real-world scenario, you would use environment variables for these
-  var transporter = nodemailer.createTransport({
-    host: 'email-smtp.us-east-2.amazonaws.com',
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
     port: 587,
-    secure: false,
-    requireTLS: true,
+    secure: false, // Use SSL
     auth: {
-        user: 'AKIARKLIGE3HM5KZNDWI',
-        pass: 'BLC5J7lZFVautX6wdS+AEkzSW7oFvGSvNkhXc8EFS22n'
-    }
-});
-
+      user: 'info@codelabtechnologies.com', // Replace with your email
+      pass: 'rnpy dzuq ldev einz', // Replace with your app password
+    },
+  });
   try {
     const info = await transporter.sendMail({
-      from: 'donotreply@cadopsus.com',
-      to: "info@codelabtechnolgoies.com",
+      from: 'info@codelabtechnologies.com',
+      to: "info@codelabtechnologies.com",
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: `<p><strong>Name:</strong> ${name}</p>

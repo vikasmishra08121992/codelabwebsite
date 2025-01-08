@@ -15,13 +15,14 @@ export function ServiceLayout({ title, subtitle, children, headerImage }: Servic
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 w-full h-48">
           <Image
             src={headerImage}
             alt={title}
             layout="fill"
             objectFit="cover"
             quality={100}
+            
           />
           <div className="absolute inset-0 bg-black opacity-50" />
         </div>
@@ -33,7 +34,7 @@ export function ServiceLayout({ title, subtitle, children, headerImage }: Servic
             <p className="text-xl text-white/90 mb-8">
               {subtitle}
             </p>
-            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-white/90">
+            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-white/90">
               <Link href="/contact">
                 Get Started <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

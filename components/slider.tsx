@@ -10,26 +10,26 @@ import { motion, AnimatePresence } from 'framer-motion'
 const slides = [
     {
         title: "Dedicated Development Solutions",
-        description: "Leverage our expertise to build tailored software solutions that drive your business forward.",
-        image: "/slider/emp2.png",
+        description: "Leverage our expertise to deliver tailored software solutions for your business.",
+        image: "/slider/4.jpeg",
         gradient: "from-blue-400 to-cyan-500",
     },
     {
         title: "Transforming Ideas Into Digital Reality",
         description: "We deliver innovative software solutions that drive business growth and efficiency.",
-        image: "/slider/8.png",
+        image: "/slider/2.jpeg",
         gradient: "from-orange-400 to-yellow-500",
     },
     {
         title: "Cutting-Edge Solutions for Modern Businesses",
         description: "Stay ahead of the competition with our innovative IT services.",
-        image: "/slider/cut1.png",
+        image: "/slider/1.jpeg",
         gradient: "from-purple-400 to-pink-500",
     },
     {
         title: "Empower Your Digital Transformation",
         description: "Partner with us to revolutionize your business in the digital age.",
-        image: "/slider/emp11.png",
+        image: "/slider/2.jpeg",
         gradient: "from-blue-400 to-cyan-500",
     },
 ]
@@ -43,7 +43,7 @@ export function Slider() {
             if (!isAnimating) {
                 setCurrentSlide((prev) => (prev + 1) % slides.length)
             }
-        }, 10000)
+        }, 30000)
 
         return () => clearInterval(timer)
     }, [isAnimating])
@@ -83,7 +83,7 @@ export function Slider() {
                     />
                     <div className="absolute inset-0" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center text-white max-w-4xl p-8 rounded-3xl bg-[#00000075] sm:w-5/6 md:w-3/5">
+                        <div className="text-center text-white max-w-4xl p-8 rounded-3xl bg-[#00000099] sm:w-5/6 md:w-3/5">
                             <div className="text-2xl  md:text-4xl lg:text-6xl  font-bold mb-6">
                                 {slides[currentSlide].title}
                             </div>

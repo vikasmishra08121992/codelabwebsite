@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { Button } from '@/components/ui/button'
+
 import {
   Form,
   FormControl,
@@ -18,6 +19,8 @@ import { Textarea } from '@/components/ui/textarea'
 import { useState } from 'react'
 import { sendEmail } from '../actions/send-email'
 
+import { useToast } from "../../components/ui/use-toast"
+
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
@@ -28,7 +31,7 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-
+  const { toast } = useToast()
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -52,9 +55,25 @@ export default function ContactPage() {
     
     setIsSubmitting(false)
     if (result.success) {
-      
       form.reset()
+      toast({
+        title: "Success!",
+        description: (
+          <div className="flex flex-col gap-1">
+            <p>Thank you for reaching out to us!</p>
+            <p>We'll get back to you within 24-48 hours.</p>
+          </div>
+        ),
+        className: "bg-green-50 border-green-200",
+        duration: 5000,
+      })
     } else {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact us directly via email.",
+        variant: "destructive",
+        duration: 5000,
+      })
      
     }
   }
@@ -166,7 +185,7 @@ export default function ContactPage() {
                     name="contact"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Contact</FormLabel>
+                        <FormLabel>Contact *</FormLabel>
                         <FormControl>
                           <Input placeholder="Your phone number" {...field} />
                         </FormControl>
