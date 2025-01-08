@@ -120,8 +120,8 @@ const Header = () => {
                 <X className="h-6 w-6 text-white" />
               </button>
             </div>
-            <nav>
-              <ul className="space-y-4">
+            <nav  className="">
+              <ul className=" items-center space-x-0">
                 {navItems.map((item) => (
                   <li key={item.name} className="border-b border-orange-200">
                     <Link 
@@ -137,7 +137,7 @@ const Header = () => {
                     </Link>
                   </li>
                 ))}
-                <li className="pt-4">
+                <li className="">
                   <Button 
                     asChild 
                     className="w-full bg-orange-500 text-l hover:bg-orange-600 text-white transition-colors duration-300"
