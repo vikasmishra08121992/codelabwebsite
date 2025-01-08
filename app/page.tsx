@@ -59,9 +59,16 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
             We are dedicated to providing innovative IT solutions that drive growth and efficiency for businesses in the digital age.
           </p>
-          <Link href="/about" className="bg-orange-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300">
-            LET'S CONNECT
-          </Link>
+          <Button
+            asChild
+            className=" bg-orange-500 text-l hover:bg-orange-600 text-white transition-colors duration-300"
+          >
+            <Link
+              href="/contact"
+            >
+              LET'S CONNECT
+            </Link>
+          </Button>
         </div>
       </section>
     </div>
@@ -73,7 +80,7 @@ const whyChooseUs = [
   {
     title: "EXPERTISE & EXPERIENCE",
     description: "Over a decade of expertise in delivering innovative solutions tailored to meet your needs.",
-    icon: "/services/exp1.jpeg"
+    icon: "/services/Expertise & ExperieNCE.png"
   },
   {
     title: "INNOVATION & CREATIVITY",
@@ -88,7 +95,7 @@ const whyChooseUs = [
   {
     title: "AGILE METHODOLOGIES",
     description: "Rapid development cycles and flexible adjustments to meet changing needs.",
-    icon: "/services/agile.jpeg"
+    icon: "/services/agile_1.png"
   },
   {
     title: "TRANSPARENCY & INTEGRITY",
@@ -131,7 +138,7 @@ const services = [
   {
     title: "DEVOPS & CI/CD SERVICES",
     description: "Protect your digital assets with our robust security solutions.",
-    icon: "/services/devops.jpeg",
+    icon: "/services/devOps_1.png",
   },
   {
     title: "DEDICATED DEVELOPMENT TEAM",

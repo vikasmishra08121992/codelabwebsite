@@ -120,7 +120,7 @@ const services = [
     title: "DEVOPS & CI/CD SERVICES",
     shortDesc: "Streamline your development process with our DevOps and CI/CD expertise.",
     description: "Optimize your development lifecycle with our DevOps and CI/CD services. We implement automated deployment pipelines, container orchestration, and infrastructure as code solutions. Our expertise in tools like Jenkins, Docker, and Kubernetes helps streamline your development process, improve collaboration, and ensure faster, more reliable software delivery.",
-    icon: "/services/devops.jpeg",
+    icon: "/services/devOps_1.png",
     serviceName: "devops-development",
     features: [
       "Continuous integration and delivery",
