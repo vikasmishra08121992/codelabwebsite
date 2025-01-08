@@ -80,7 +80,7 @@ const whyChooseUs = [
   {
     title: "EXPERTISE & EXPERIENCE",
     description: "Over a decade of expertise in delivering innovative solutions tailored to meet your needs.",
-    icon: "/services/Expertise & ExperieNCE.png"
+    icon: "/services/Expertise.png"
   },
   {
     title: "INNOVATION & CREATIVITY",
