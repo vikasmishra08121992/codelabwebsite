@@ -227,7 +227,7 @@ const technologies = {
 }
 
 export function TechnologyShowcase() {
-  const [activeCategory, setActiveCategory] = useState('mobile')
+  const [activeCategory, setActiveCategory] = useState('backend')
 
   return (
     <section className="py-16 bg-white">
