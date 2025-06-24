@@ -150,6 +150,10 @@ const technologies = [
   { name: 'AWS', icon: '/tech-icons/aws.svg' },
   { name: 'Docker', icon: '/tech-icons/docker.svg' },
   { name: 'Kubernetes', icon: '/tech-icons/kubernetes.svg' },
-  { name: 'Elasticsearch', icon: '/tech-icons/elasticsearch.svg' }
+  { name: 'Elasticsearch', icon: '/tech-icons/elasticsearch.svg' },
+  { name: 'GCP (Google Clouyd Platform)', icon: '/tech-icons/gcp.svg' },
+  { name: 'Azure', icon: '/tech-icons/azure.svg' },
+  { name: 'CI /CD', icon: '/tech-icons/ci-cd.svg' },
+  { name: 'Digital Ocean', icon: '/tech-icons/    .svg' }
 ]
 

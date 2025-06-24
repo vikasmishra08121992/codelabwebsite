@@ -10,10 +10,22 @@ import { Menu, X } from 'lucide-react'
 const navItems = [
   { name: 'HOME', path: '/' },
   { name: 'SERVICES', path: '/services' },
+  // { name: 'DEVELOPERS', path: '/developers' },
   { name: 'ABOUT', path: '/about' },
   { name: 'BLOG', path: '/blog' },
   { name: 'TECHNOLOGIES', path: '/technologies' }
 ]
+
+const serviceDropdown = [
+  { name: 'WEB DEVELOPMENT', path: '/services/web-development' },
+  { name: 'MOBILE DEVELOPMENT', path: '/services/mobile-development' },
+  { name: 'FULLSTACK DEVELOPMENT', path: '/services/fullstack-development' },
+  { name: 'SAAS DEVELOPMENT', path: '/services/saas-development' },
+  { name: 'DEDICATED DEVELOPMENT TEAM', path: '/services/dedicated-development-team' },
+  { name: 'CLOUD SOLUTIONS', path: '/services/cloud-development' },
+  { name: 'QUALITY ASSURANCE & TESTING', path: '/services/qa-testing' },
+  { name: 'DEVOPS & CI/CD SERVICES', path: '/services/devops-development' },
+];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -71,17 +83,49 @@ const Header = () => {
             <nav className="flex items-center mr-8">
               <ul className="flex items-center space-x-12">
                 {navItems.map((item) => (
-                  <li key={item.name}>
-                    <Link 
-                      href={item.path}
-                      className={`text-l transition-colors duration-300 ${
-                        isTransparent 
-                          ? 'text-gray-700 hover:text-orange-300' 
-                          : 'text-gray-700 hover:text-orange-500'
-                      } ${pathname === item.path ? 'text-orange-500' : ''}`}
-                    >
-                      {item.name}
-                    </Link>
+                  <li key={item.name} className="relative group">
+                    {item.name === 'SERVICES' ? (
+                      <>
+                        <Link 
+                          href={item.path}
+                          className={`text-l transition-colors duration-300 ${
+                            isTransparent 
+                              ? 'text-gray-700 hover:text-orange-300' 
+                              : 'text-gray-700 hover:text-orange-500'
+                          } ${pathname === item.path ? 'text-orange-500' : ''}`}
+                        >
+                          {item.name}
+                        </Link>
+                        {/* Dropdown */}
+                        <div className="absolute left-1/2 -translate-x-1/2 mt-2 hidden group-hover:block z-50 min-w-[270px]">
+                          <div className="bg-white rounded-xl shadow-2xl py-4 px-0 border border-gray-100">
+                            <ul className="flex flex-col gap-1">
+                              {serviceDropdown.map((service) => (
+                                <li key={service.name}>
+                                  <Link
+                                    href={service.path}
+                                    className="block px-6 py-2 text-base text-gray-800 rounded-md font-medium transition-all duration-200 hover:bg-orange-50 hover:text-orange-600 focus:bg-orange-100 focus:text-orange-700 outline-none"
+                                  >
+                                    {service.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <Link 
+                        href={item.path}
+                        className={`text-l transition-colors duration-300 ${
+                          isTransparent 
+                            ? 'text-gray-700 hover:text-orange-300' 
+                            : 'text-gray-700 hover:text-orange-500'
+                        } ${pathname === item.path ? 'text-orange-500' : ''}`}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
